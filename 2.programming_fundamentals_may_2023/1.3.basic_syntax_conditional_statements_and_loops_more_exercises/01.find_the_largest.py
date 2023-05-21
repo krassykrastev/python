@@ -7,3 +7,6 @@ for i in range(len(num)):
 biggest_number = sorted(current_number, reverse=True)
 
 print(''.join(biggest_number))
+
+# another solution from user:subtotal
+# print(''.join(reversed(sorted(list(input())))))
