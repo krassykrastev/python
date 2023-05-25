@@ -4,7 +4,7 @@ text = input()
 my_list = list(text.split(', '))
 
 for i in range(len(my_list) -1 , -1, -1):
-    if i == len(my_list) -1 and my_list[i] == 'wolf':
+    if my_list[-1] == 'wolf':
         print('Please go away and stop eating my sheep')
         break
     if my_list[i] == 'sheep':
