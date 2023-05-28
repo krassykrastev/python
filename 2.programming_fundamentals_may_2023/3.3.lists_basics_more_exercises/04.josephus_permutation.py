@@ -1,4 +1,4 @@
-# solution from ceo as I was not able to find solution myself
+# solution by ceo as I was not able to find solution myself
 main_list = input().split()
 skip_number_k = int(input())
 
