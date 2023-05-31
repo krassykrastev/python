@@ -10,7 +10,7 @@ def convert_currency(base_currency, target_currency, amount):
     convert_amount = amount * exchange_rate
     return convert_amount
 
-if __name__ == '__main':
+if __name__ == '__main__':
     base_currency = input('Enter a base currency: ')
     target_currency = input('Enter a target currency: ')
     amount = int(input('Currency amount: '))
