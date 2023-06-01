@@ -1,7 +1,4 @@
-def rounding():
-    list_of_numbers_as_float = list(map(float, list_of_numbers))
-    return list(map(round, list_of_numbers_as_float))
-
 list_of_numbers = input().split(' ')
+list_of_numbers_as_float = list(map(float, list_of_numbers))
 
-print(rounding())
+print(list(map(round, list_of_numbers_as_float)))
