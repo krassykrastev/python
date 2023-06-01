@@ -1,4 +1,8 @@
-list_of_numbers = input().split(' ')
-list_of_numbers_as_float = list(map(float, list_of_numbers))
+numbers = input().split(' ')
+numbers_as_float = list(map(float, numbers))
 
-print(list(map(round, list_of_numbers_as_float)))
+print(list(map(round, numbers_as_float)))
+
+# another solution
+# numbers = [round(float(i)) for i in input().split()]
+# print(numbers)
