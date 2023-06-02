@@ -1,12 +1,12 @@
-def calculate_result(operator, num1, num2):
-    if operator == 'multiply':
-        return num1 * num2
-    elif operator == 'divide':
-        return int(num1 / num2)
-    elif operator == 'add':
-        return num1 + num2
-    elif operator == 'subtract':
-        return num1 - num2
+def calculate_result(some_operator, number_1, number_2):
+    if some_operator == 'multiply':
+        return number_1 * number_2
+    elif some_operator == 'divide':
+        return int(number_1 / number_2)
+    elif some_operator == 'add':
+        return number_1 + number_2
+    elif some_operator == 'subtract':
+        return number_1 - number_2
 
 operator = input()
 num1 = int(input())
