@@ -1,13 +1,13 @@
-def convert_grade_to_word(grade):
-    if 2.00 <= grade <= 2.99:
+def convert_grade_to_word(some_grade):
+    if 2.00 <= some_grade <= 2.99:
         return 'Fail'
-    elif 3.00 <= grade <= 3.49:
+    elif 3.00 <= some_grade <= 3.49:
         return 'Poor'
-    elif 3.50 <= grade <= 4.49:
+    elif 3.50 <= some_grade <= 4.49:
         return 'Good'
-    elif 4.50 <= grade <= 5.49:
+    elif 4.50 <= some_grade <= 5.49:
         return 'Very Good'
-    elif 5.50 <= grade <= 6.00:
+    elif 5.50 <= some_grade <= 6.00:
         return 'Excellent'
 
 grade = float(input())
