@@ -1,3 +1,12 @@
+# Write a program that reads a single string with numbers separated by comma and space ", ".
+# Print the indices of all even numbers.
+#
+# Input1: 3, 2, 1, 5, 8
+# Output1: [1, 4]
+#
+# Input2: 2, 4, 6, 9, 10
+# Output2: [0, 1, 2, 4]
+
 indices_of_even_numbers = []
 list_of_numbers = list(map(int, input().split(', ')))
 for index in range(len(list_of_numbers)):
