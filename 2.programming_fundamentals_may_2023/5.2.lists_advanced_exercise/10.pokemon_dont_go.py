@@ -31,7 +31,7 @@
 # Output2: 51
 
 list_of_numbers = [int(s) for s in input().split(' ')]
-list_of_removed_elements = []
+list_of_removed_numbers = []
 
 while list_of_numbers:
     index = int(input())
@@ -53,6 +53,6 @@ while list_of_numbers:
         else:
             list_of_numbers[number] -= number_to_be_removed
 
-    list_of_removed_elements.append(number_to_be_removed)
+    list_of_removed_numbers.append(number_to_be_removed)
 
-print(sum(list_of_removed_elements))
+print(sum(list_of_removed_numbers))
