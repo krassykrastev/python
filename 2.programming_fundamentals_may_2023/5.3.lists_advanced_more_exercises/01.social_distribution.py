@@ -26,17 +26,32 @@
 population_wealth = [int(s) for s in input().split(', ')]
 minimum_wealth = int(input())
 
-if minimum_wealth > sum(population_wealth) / len(population_wealth):
-    print('No equal distribution possible')
-    exit()
+for index in range(len(population_wealth)):
+    current_index = population_wealth[index]
+    if population_wealth[index] < minimum_wealth:
+        population_wealth[index] += (minimum_wealth - current_index)
+        max_index = population_wealth.index(max(population_wealth))
+        population_wealth[max_index] -= (minimum_wealth - current_index)
 
-while any(x < minimum_wealth for x in population_wealth):
-    max_number = max(population_wealth)
-    number_to_change = min(population_wealth)
-    index_max = population_wealth.index(max_number)
-    index_min = population_wealth.index(number_to_change)
-    added_value = minimum_wealth - number_to_change
-    population_wealth[index_max] -= added_value
-    population_wealth[index_min] += added_value
+if min(population_wealth) >= minimum_wealth:
+    print(population_wealth)
+else:
+    print("No equal distribution possible")
 
-print(population_wealth)
+# population_wealth = [int(s) for s in input().split(', ')]
+# minimum_wealth = int(input())
+#
+# if minimum_wealth > sum(population_wealth) / len(population_wealth):
+#     print('No equal distribution possible')
+#     exit()
+#
+# while any(x < minimum_wealth for x in population_wealth):
+#     max_number = max(population_wealth)
+#     number_to_change = min(population_wealth)
+#     index_max = population_wealth.index(max_number)
+#     index_min = population_wealth.index(number_to_change)
+#     added_value = minimum_wealth - number_to_change
+#     population_wealth[index_max] -= added_value
+#     population_wealth[index_min] += added_value
+#
+# print(population_wealth)
