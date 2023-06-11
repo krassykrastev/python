@@ -1,3 +1,11 @@
+# Write a program that takes a single string and prints a list of all the capital letters indices.
+#
+# Input1: pYtHoN
+# Output1: [1, 3, 5]
+#
+# Input2: CApiTAls
+# Output2: [0, 1, 4, 5]
+
 capital_letters_indices = []
 text = input()
 
