@@ -1,3 +1,27 @@
+# You will be given two strings. Transform the first string into the second one, letter by letter, starting from the first one.
+# After each interaction, print the resulting string only if it is unique.
+# Note: the strings will have the same length.
+#
+# Input1:
+# bubble gum
+# turtle hum
+#
+# Output1:
+# tubble gum
+# turble gum
+# turtle gum
+# turtle hum
+#
+# Input2:
+# Kitty
+# Doggy
+#
+# Output2:
+# Ditty
+# Dotty
+# Dogty
+# Doggy
+
 first_string = input()
 second_string = input()
 last_printed_string = first_string
