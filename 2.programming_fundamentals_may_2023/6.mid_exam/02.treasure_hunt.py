@@ -53,21 +53,17 @@
 # Failed treasure hunt.
 
 initial_loot = input().split("|")
-
 command = input().split(" ")
 
 while command[0] != "Yohoho!":
-
     if command[0] == "Loot":
         for index in range(1, len(command)):
             if command[index] not in initial_loot:
                 initial_loot.insert(0, command[index])
-
     elif command[0] == "Drop":
         index = int(command[1])
         if 0 <= index < len(initial_loot):
             initial_loot.append(initial_loot.pop(index))
-
     elif command[0] == "Steal":
         count = int(command[1])
         stolen_items = initial_loot[-count:]
