@@ -19,14 +19,12 @@
 # Input4: -1 -2 -3 -4 -5 -6
 # Output4: -1 -2 -3
 
-TOP_FIVE_NUMBERS = 5
-
 numbers = [int(x) for x in input().split(" ")]
-av_num = sum(numbers) / len(numbers)
-filtered_nums = sorted([x for x in numbers if x > av_num])
+average_number = sum(numbers) / len(numbers)
+filtered_nums = sorted([x for x in numbers if x > average_number])
 
 if filtered_nums:
-    for i in range(TOP_FIVE_NUMBERS):
+    for i in range(5):
         if filtered_nums:
             print(filtered_nums.pop(), end=" ")
 else:
