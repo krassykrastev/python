@@ -45,6 +45,8 @@
 # Input3: regular
 # Output3: Invalid order!
 
+price_adjustment = 1 # price for regular customer
+
 total_sum = 0
 part_price_or_customer_type = input()
 
@@ -62,8 +64,6 @@ taxes = total_sum * 0.2
 
 if part_price_or_customer_type == "special":
     price_adjustment = 0.9
-elif part_price_or_customer_type == "regular":
-    price_adjustment = 1
 
 if total_sum == 0:
     print("Invalid order!")
