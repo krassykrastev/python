@@ -85,10 +85,12 @@ for i in range(n):
 
 data = input()
 
-while not data == "Stop":
+while data != "Stop":
     command = data.split("|")
     if command[0] == "Add":
-        piece, composer, key = command[1:]
+        piece = command[1]
+        composer = command[2]
+        key = command[3]
         if piece in pieces:
             print(f"{piece} is already in the collection!")
         else:
@@ -102,7 +104,8 @@ while not data == "Stop":
         else:
             print(f"Invalid operation! {piece} does not exist in the collection.")
     elif command[0] == "ChangeKey":
-        piece, new_key = command[1:]
+        piece = command[1]
+        new_key = command[2]
         if piece in pieces:
             pieces[piece]['key'] = new_key
             print(f"Changed the key of {piece} to {new_key}!")
