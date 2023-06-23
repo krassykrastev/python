@@ -3,6 +3,8 @@
 # The class should have two additional methods:
 # • add_product(product: str) - adds the product in the storage if there is enough space for it
 # • get_products() - returns the storage list
+#
+# Output: ["apple", "banana", "potato", "tomato"]
 
 class Storage:
     storage = []
