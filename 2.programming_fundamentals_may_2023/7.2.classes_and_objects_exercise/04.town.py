@@ -11,10 +11,10 @@
 # N | Longitude: 23° 19' 26.94" E
 
 class Town:
-    def __init__(self, name, latitude="0°N", longitude="0°E"):
+    def __init__(self, name):
         self.name = name
-        self.latitude = latitude
-        self.longitude = longitude
+        self.latitude = "0°N"
+        self.longitude = "0°E"
 
     def set_latitude(self, latitude):
         self.latitude = latitude
