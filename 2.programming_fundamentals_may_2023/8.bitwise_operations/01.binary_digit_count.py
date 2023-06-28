@@ -1,3 +1,6 @@
+# You are given a positive integer number and one binary digit (0 or 1).
+# Write a program that finds the number of binary digits in a given integer
+
 counter = 0
 
 number = int(input())
