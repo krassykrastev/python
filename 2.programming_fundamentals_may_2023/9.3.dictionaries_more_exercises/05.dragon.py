@@ -83,8 +83,10 @@ for i in range(number_of_dragons):
 
 for color in dragons:
     total_dragons_in_color = len(dragons[color])
-    avg_damage, avg_health, avg_armor = 0, 0, 0
-
+    avg_damage = 0
+    avg_health = 0
+    avg_armor = 0
+    
     for stats in dragons[color].values():
         avg_damage += stats["damage"]
         avg_health += stats["health"]
