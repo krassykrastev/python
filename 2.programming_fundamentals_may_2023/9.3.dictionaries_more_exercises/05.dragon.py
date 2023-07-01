@@ -86,7 +86,7 @@ for color in dragons:
     avg_damage = 0
     avg_health = 0
     avg_armor = 0
-    
+
     for stats in dragons[color].values():
         avg_damage += stats["damage"]
         avg_health += stats["health"]
