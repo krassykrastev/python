@@ -58,7 +58,13 @@
 # -Xaarxx -> damage: 250, health: 1000, armor: 10
 # -Zzazx -> damage: 45, health: 1000, armor: 10
 
-def check_for_null_values(damage, health, armor):
+number_of_dragons = int(input())
+dragons = {}
+
+for i in range(number_of_dragons):
+
+    color, name, damage, health, armor = input().split()
+
     if damage == "null":
         damage = 45
 
@@ -68,14 +74,9 @@ def check_for_null_values(damage, health, armor):
     if armor == "null":
         armor = 10
 
-    return damage, health, armor
-
-number_of_dragons = int(input())
-dragons = {}
-
-for i in range(number_of_dragons):
-    color, name, damage, health, armor = [x if x.isalpha() else int(x) for x in input().split()]
-    damage, health, armor = check_for_null_values(damage, health, armor)
+    damage = int(damage)
+    health = int(health)
+    armor = int(armor)
 
     dragons[color] = dragons.get(color, {})
     dragons[color][name] = {"damage": damage, "health": health, "armor": armor}
@@ -83,6 +84,7 @@ for i in range(number_of_dragons):
 for color in dragons:
     total_dragons_in_color = len(dragons[color])
     avg_damage, avg_health, avg_armor = 0, 0, 0
+
     for stats in dragons[color].values():
         avg_damage += stats["damage"]
         avg_health += stats["health"]
