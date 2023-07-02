@@ -131,5 +131,6 @@ sorted_users = dict(sorted(users.items(), key=lambda x: x[0]))
 for name in sorted_users:
     print(name)
     sorted_contests = sorted(sorted_users[name].items(), key=lambda x: -x[1])
+
     for i in range(len(sorted_contests)):
         print(f"#  {sorted_contests[i][0]} -> {sorted_contests[i][1]}")
