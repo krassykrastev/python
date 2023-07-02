@@ -79,24 +79,33 @@ while True:
 
         if player_name not in players:
             players[player_name] = {position: skill}
+
         else:
             if position not in players[player_name]:
                 players[player_name][position] = skill
+
             if players[player_name][position] < skill:
                 players[player_name][position] = skill
 
     elif " vs " in text_string:
         first_player, second_player = text_string.split(" vs ")
+
         if first_player and second_player in players:
+
             for the_position in players[first_player]:
+
                 if the_position in players[second_player]:
                     first_total_points = sum(players[first_player].values())
                     second_total_points = sum(players[second_player].values())
+
                     if first_total_points > second_total_points:
                         del players[second_player]
+
                     elif first_total_points < second_total_points:
                         del players[first_player]
+
                     break
+
     text_string = input()
 
 best_player = {}
@@ -109,8 +118,11 @@ sorted_best_player = sorted(best_player.items(), key=lambda player: (-player[1],
 for player in sorted_best_player:
     skills = {}
     print(f"{player[0]}: {player[1]} skill")
+
     for skill in players[player[0]].items():
         skills[skill[0]] = skill[1]
+
     sorted_skills = sorted(skills.items(), key=lambda item: (-item[1], item[0]))
+
     for skill in sorted_skills:
         print(f'- {skill[0]} <::> {skill[1]}')
