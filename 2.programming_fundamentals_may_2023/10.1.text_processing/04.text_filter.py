@@ -16,6 +16,6 @@ text_string = input()
 
 for word in banned_words:
     while word in text_string:
-        text_string = text_string.replace(word, len(word)*"*")
+        text_string = text_string.replace(word, "*" * len(word))
 
 print(text_string)
