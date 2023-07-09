@@ -20,18 +20,12 @@
 character_sum = 0
 
 first_character = input()
-first_character_ord = ord(first_character)
 second_character = input()
-second_character_ord = ord(second_character)
 text_string = input()
 
 for text_character in text_string:
-    text_character_ord = ord(text_character)
-    if first_character_ord > second_character_ord:
-        if second_character_ord < text_character_ord < first_character_ord:
-            character_sum += text_character_ord
-    else:
-        if first_character_ord < text_character_ord < second_character_ord:
-            character_sum += text_character_ord
+
+    if ord(first_character) < ord(text_character) < ord(second_character):
+        character_sum += ord(text_character)
 
 print(character_sum)
