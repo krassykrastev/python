@@ -24,33 +24,14 @@
 # Marry is 19 years old.
 # Garry is 48 years old.
 
-name = age = ""
-
 lines_of_string = int(input())
 
 for line in range(lines_of_string):
-    text_string = input()
-    for character_index in range(len(text_string)):
-        if text_string[character_index] == "@":
-            for name_character in range(character_index + 1, len(text_string)):
-                if text_string[name_character] == "|":
-                    break
-                name += text_string[name_character]
 
-        if text_string[character_index] == "#":
-            for age_character in range(character_index + 1, len(text_string)):
-                if text_string[age_character] == "*":
-                    break
-                age += text_string[age_character]
+    text_string = input()
+
+    name = text_string[text_string.index("@") + 1:text_string.index("|")]
+
+    age = text_string[text_string.index("#") + 1:text_string.index("*")]
 
     print(f"{name} is {age} years old.")
-    name = age = ""
-
-# another solution
-# number_strings = int(input())
-#
-# for _ in range(number_strings):
-#     test_string = input()
-#     name = test_string[test_string.index("@") + 1:test_string.index("|")]
-#     age = test_string[test_string.index("#") + 1:test_string.index("*")]
-#     print(f"{name} is {age} years old.")
