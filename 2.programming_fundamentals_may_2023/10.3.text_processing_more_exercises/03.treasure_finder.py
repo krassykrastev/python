@@ -34,8 +34,7 @@ while True:
     for character in string:
 
         key = key_numbers[key_index]
-        current_character_ord = ord(character)
-        current_character = chr(current_character_ord - key)
+        current_character = chr(ord(character) - key)
         decrypted_message += current_character
 
         if key_index >= len(key_numbers) - 1:
@@ -45,8 +44,7 @@ while True:
 
     treasure_type_list = decrypted_message.split("&")
     treasure_type = treasure_type_list[1]
-    treasure_coordinates_list = decrypted_message.split("<")
-    treasure_coordinates = treasure_coordinates_list[1]
-    treasure_coordinates = treasure_coordinates[:-1]
+
+    treasure_coordinates = decrypted_message[decrypted_message.index("<") + 1:decrypted_message.index(">")]
 
     print(f"Found {treasure_type} at {treasure_coordinates}")
