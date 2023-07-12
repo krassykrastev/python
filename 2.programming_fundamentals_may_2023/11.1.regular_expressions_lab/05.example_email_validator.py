@@ -1,6 +1,7 @@
 import re
 import tkinter as tk
 
+
 def validate_email():
     email = entry_email.get()
 
