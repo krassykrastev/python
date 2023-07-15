@@ -61,6 +61,8 @@ while True:
 name_and_distance_sorted = dict(sorted(name_and_distance.items(), key=lambda x: -x[1]))
 
 rank = 0
+current_rank = ""
+
 for name in name_and_distance_sorted.keys():
     rank += 1
     if rank > 3:
