@@ -48,7 +48,6 @@ import re
 pattern = r"^@#+[A-Z][A-Za-z0-9]{4,}[A-Z]@#+$"
 digits_pattern = r"\d"
 
-
 n = int(input())
 
 for i in range(n):
