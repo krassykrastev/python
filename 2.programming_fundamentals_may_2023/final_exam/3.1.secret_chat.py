@@ -49,7 +49,6 @@ while True:
     command = input().split(':|:')
 
     if command[0] == "Reveal":
-        print(f"You have a new text message: {data}")
         break
 
     elif command[0] == "InsertSpace":
@@ -75,3 +74,5 @@ while True:
         data = data.replace(substring, replacement)
 
         print(data)
+
+print(f"You have a new text message: {data}")
