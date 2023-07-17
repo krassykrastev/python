@@ -41,26 +41,25 @@ while True:
     if line == "Travel":
         break
 
-    command_args = line.split(":")
-    command = command_args[0]
+    command = line.split(":")
 
-    if command == "Add Stop":
-        index = int(command_args[1])
-        new_stop = command_args[2]
+    if command[0] == "Add Stop":
+        index = int(command[1])
+        new_stop = command[2]
 
         if 0 <= index < len(string):
             string = string[:index] + new_stop + string[index:]
 
-    elif command == "Remove Stop":
-        start_index = int(command_args[1])
-        end_index = int(command_args[2])
+    elif command[0] == "Remove Stop":
+        start_index = int(command[1])
+        end_index = int(command[2])
 
         if 0 <= start_index < len(string) and 0 <= end_index < len(string):
             string = string[:start_index] + string[end_index + 1:]
 
-    elif command == "Switch":
-        old_string = command_args[1]
-        new_string = command_args[2]
+    elif command[0] == "Switch":
+        old_string = command[1]
+        new_string = command[2]
 
         string = string.replace(old_string, new_string)
 
