@@ -1,211 +1,120 @@
-number_of_plants = int(input())
+# You have now returned from your world tour. On your way, you have discovered some new plants, and you want to gather
+# some information about them and create an exhibition to see which plant is highest rated.
+# On the first line, you will receive a number n. On the next n lines, you will be given some information about the
+# plants that you have discovered in the format: "{plant}<->{rarity}". Store that information because you will need it
+# later. If you receive a plant more than once, update its rarity.
+# After that, until you receive the command "Exhibition", you will be given some of these commands:
+# •	"Rate: {plant} - {rating}" – add the given rating to the plant (store all ratings)
+# •	"Update: {plant} - {new_rarity}" – update the rarity of the plant with the new one
+# •	"Reset: {plant}" – remove all the ratings of the given plant
+# Note: If any given plant name is invalid, print "error"
+# After the command "Exhibition", print the information that you have about the plants in the following format:
+# "Plants for the exhibition:
+# - {plant_name1}; Rarity: {rarity}; Rating: {average_rating}
+# - {plant_name2}; Rarity: {rarity}; Rating: {average_rating}
+# …
+# - {plant_nameN}; Rarity: {rarity}; Rating: {average_rating}"
+# The average rating should be formatted to the second decimal place.
+#
+# Input1:
+# 3
+# Arnoldii<->4
+# Woodii<->7
+# Welwitschia<->2
+# Rate: Woodii - 10
+# Rate: Welwitschia - 7
+# Rate: Arnoldii - 3
+# Rate: Woodii - 5
+# Update: Woodii - 5
+# Reset: Arnoldii
+# Exhibition
+#
+# Output1:
+# Plants for the exhibition:
+# - Arnoldii; Rarity: 4; Rating: 0.00
+# - Woodii; Rarity: 5; Rating: 7.50
+# - Welwitschia; Rarity: 2; Rating: 7.00
+#
+# Input2:
+# 2
+# Candelabra<->10
+# Oahu<->10
+# Rate: Oahu - 7
+# Rate: Candelabra - 6
+# Exhibition
+#
+# Output2:
+# Plants for the exhibition:
+# - Candelabra; Rarity: 10; Rating: 6.00
+# - Oahu; Rarity: 10; Rating: 7.00
 
-plants_info = {}
+def create_plants_data(plants, number):
+    for i in range(number):
+        data = input().split("<->")
+        name_of_plant = data[0]
+        rarity = int(data[1])
 
-for plant in range(number_of_plants):
-    plant_name, rarity = input().split("<->")
-    plants_info[plant_name] = [rarity, []]
+        if name_of_plant not in plants:
+            plants[name_of_plant] = {"rarity": rarity, "rating": []}
 
+        else:
+            plants[name_of_plant]["rarity"] += rarity
 
-def check_plant_exist(plant):
-    if plant in plants_info:
-        return True
-    print("error")
-
-
-def rate(info):
-    plant, rating = info.split(" - ")
-    plants_info[plant][1].append(int(rating))
+    return plants
 
 
-def update(info):
-    plant, new_rarity = info.split(" - ")
-    plants_info[plant][0] = new_rarity
+def additional_plants_data(plants):
+
+    while True:
+        command = input().split(": ")
+
+        if command[0] == "Exhibition":
+            break
+
+        data = command[1].split(" - ")
+        type_of_command = command[0]
+        plant = data[0]
+
+        if plant not in plants:
+            print("error")
+            continue
+
+        if type_of_command == "Rate":
+            rating = int(data[1])
+            plants[plant]["rating"].append(rating)
+
+        elif type_of_command == "Update":
+            new_rarity = int(data[1])
+            plants[plant]["rarity"] = new_rarity
+
+        elif type_of_command == "Reset":
+            plants[plant]["rating"].clear()
+
+    return plants
 
 
-def reset(info):
-    plant = info
-    plants_info[plant][1] = []
-
-
-def show_result():
+def print_function(plants):
     print("Plants for the exhibition:")
-    for plant in plants_info:
-        average_rating = 0
-        if sum(plants_info[plant][1]) != 0:
-            average_rating = sum(plants_info[plant][1]) / len(plants_info[plant][1])
-        print(f"- {plant}; Rarity: {plants_info[plant][0]}; Rating: {average_rating:.2f}")
+
+    for dict_el in plants:
+
+        if len(plants[dict_el]["rating"]) > 0 and sum(plants[dict_el]["rating"]) > 0:
+            average_rating = sum(plants[dict_el]["rating"]) / len(plants[dict_el]["rating"])
+
+        else:
+            average_rating = 0
+
+        rarity = plants[dict_el]["rarity"]
+        print(f"- {dict_el}; Rarity: {rarity}; Rating: {average_rating:.2f}")
 
 
-command_func = {
-    "Rate": rate,
-    "Update": update,
-    "Reset": reset
-}
+def plant_discovery(number):
+    plants = {}
 
-command = input()
-while command != "Exhibition":
-    command_type, info = command.split(": ")
-    if check_plant_exist(info.split(" - ")[0]):
-        command_func[command_type](info)
-    command = input()
-
-show_result()
+    create_plants_data(plants, number)
+    additional_plants_data(plants)
+    print_function(plants)
 
 
-
-
-
-
-
-#
-# number_of_pants = int(input())
-#
-# plant_info = {}
-# rarity_d, rating_d = "Rarity", "Rating"
-# for plant in range(number_of_pants):
-#     plant_name, plant_rarity = input().split("<->")
-#     plant_info[plant_name] = plant_info.get(plant_name, {})
-#     plant_info[plant_name][rarity_d] = float(plant_rarity)
-#     plant_info[plant_name][rating_d] = []
-#
-#
-# def check_plant_name(plant_name):
-#     if plant_name not in plant_info:
-#         print("error")
-#         return
-#     return True
-#
-#
-# def rate_plant(plant_name, plant_rating):
-#     if check_plant_name(plant_name):
-#         plant_info[plant_name][rating_d].append(plant_rating)
-#
-#
-# def update_plant(plant_name, new_rarity):
-#     if check_plant_name(plant_name):
-#         plant_info[plant_name][rarity_d] = new_rarity
-#
-#
-# def reset_plant(plant_name):
-#     if check_plant_name(plant_name):
-#         plant_info[plant_name][rating_d] = []
-#
-#
-# def show_result():
-#     print("Plants for the exhibition:")
-#     for plant in plant_info:
-#         average = 0.00
-#         if sum(plant_info[plant][rating_d]) != 0:
-#             average = sum(plant_info[plant][rating_d]) / len(plant_info[plant][rating_d])
-#         print(
-#             f"- {plant}; Rarity: {plant_info[plant][rarity_d]:.0f}; Rating: {average:.2f}")
-#
-#
-# command = input()
-#
-# while command != "Exhibition":
-#     if "Reset" in command:
-#         _, plant_name = command.split(": ")
-#         reset_plant(plant_name)
-#         command = input()
-#         continue
-#     plant_name, rating_or_rarity = [float(x) if x.isdigit() else x for x in command.split(": ")[1].split(" - ")]
-#     if "Rate" in command:
-#         rate_plant(plant_name, rating_or_rarity)
-#     elif "Update" in command:
-#         update_plant(plant_name, rating_or_rarity)
-#     command = input()
-#
-# show_result()
-#
-#
-
-
-
-#
-#
-# total_plants = int(input())
-#
-# plant_info = {}
-# total_rating = "total"
-# rating_plant = "rating"
-# rarity_d = "rarity"
-# resul_list = []
-# for _ in range(total_plants):
-#     command = input().split("<->")
-#     plant_name = command[0]
-#     plant_rarity = int(command[1])
-#     if plant_name not in plant_info:
-#         plant_info[plant_name] = {}
-#         plant_info[plant_name][total_rating] = 0
-#         plant_info[plant_name][rating_plant] = 0
-#     plant_info[plant_name][rarity_d] = plant_rarity
-#
-#
-# def reset_plant(name):
-#     if name in plant_info:
-#         plant_info[name][total_rating] = 0
-#         plant_info[name][rating_plant] = 0
-#     else:
-#         print("error")
-#
-#
-# def rate_plant(name, rating):
-#     if name in plant_info:
-#         plant_info[name][total_rating] += rating
-#         plant_info[name][rating_plant] += 1
-#     else:
-#         print("error")
-#
-#
-# def update_plant(name, rating):
-#     if name in plant_info:
-#         plant_info[name][rarity_d] = rating
-#     else:
-#         print("error")
-#
-#
-# def show_result():
-#     print(f"Plants for the exhibition:")
-#     name_d = "name"
-#     for name in plant_info:
-#         zero_rating = True
-#         for key, value in plant_info[name].items():
-#             if key == "total":
-#                 if value > 0:
-#                     total_rt = value
-#                     zero_rating = False
-#             elif key == "rating" and not zero_rating:
-#                 number_added = value
-#             elif key == "rarity":
-#                 rarity_enter = value
-#         if not zero_rating:
-#             resul_list.append({name_d: name, rating_plant: total_rt / number_added, rarity_d: rarity_enter})
-#         else:
-#             resul_list.append({name_d: name, rating_plant: 0.00, rarity_d: rarity_enter})
-#     resul_list.sort(key=lambda item: (-item[rarity_d], -item[rating_plant]))
-#     for show in resul_list:
-#         print(f"- {show[name_d]}; Rarity: {show[rarity_d]}; Rating: {(show[rating_plant]):.2f}")
-#
-#
-# command = input()
-#
-# while command != "Exhibition":
-#     if "Reset" in command:
-#         command = command.replace("Reset: ", "")
-#         reset_plant(command)
-#     elif "Rate" in command:
-#         command = (command.replace("Rate: ", "")).split(" - ")
-#         name = command[0]
-#         rating = int(command[1])
-#         rate_plant(name, rating)
-#     elif "Update" in command:
-#         command = (command.replace("Update: ", "")).split(" - ")
-#         name = command[0]
-#         rating = int(command[1])
-#         update_plant(name, rating)
-#
-#     command = input()
-#
-# show_result()
+n = int(input())
+plant_discovery(n)
