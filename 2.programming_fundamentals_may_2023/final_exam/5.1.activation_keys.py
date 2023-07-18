@@ -59,7 +59,6 @@ while True:
     command = input().split(">>>")
 
     if command[0] == "Generate":
-        print(f"Your activation key is: {key}")
         break
 
     elif command[0] == "Contains":
@@ -86,3 +85,5 @@ while True:
         end_index = int(command[2])
         key = key[:start_index] + key[end_index:]
         print(key)
+
+print(f"Your activation key is: {key}")
