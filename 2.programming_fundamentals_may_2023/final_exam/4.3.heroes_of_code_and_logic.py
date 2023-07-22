@@ -78,97 +78,194 @@
 #   HP: 100
 #   MP: 40
 
-def create_heroes(heroes_dict, number):
-    for i in range(number):
-        data = input().split(" ")
-        hero_name = data[0]
-        hit_points = int(data[1])
-        mana_points = int(data[2])
-        heroes_dict[hero_name] = [hit_points, mana_points]
+
+def cast_spell(heroes_dict, split_command):
+    current_hero_name = split_command[1]
+    mana_points_needed = int(split_command[2])
+    spell_name = split_command[3]
+
+    if heroes_dict[current_hero_name]['MANA_POINTS'] >= mana_points_needed:
+        heroes_dict[current_hero_name]['MANA_POINTS'] -= mana_points_needed
+        print(f"{current_hero_name} has successfully cast {spell_name} and now has {heroes_dict[current_hero_name]['MANA_POINTS']} MP!")
+
+    else:
+        print(f"{current_hero_name} does not have enough MP to cast {spell_name}!")
+
+    return heroes_dict
 
 
-def playing_game(heroes_dict):
-    while True:
-        command = input().split(" - ")
+def take_damage(heroes_dict, split_command):
+    current_hero_name = split_command[1]
+    damage = int(split_command[2])
+    attacker = split_command[3]
 
-        if command[0] == "End":
-            break
+    heroes_dict[current_hero_name]['HIT_POINTS'] -= damage
 
-        current_command = command[0]
+    if heroes_dict[current_hero_name]['HIT_POINTS'] > 0:
+        print(f"{current_hero_name} was hit for {damage} HP by {attacker} and now has {heroes_dict[current_hero_name]['HIT_POINTS']} HP left!")
 
-        if current_command == "CastSpell":
-            hero_name = command[1]
-            mp_needed = int(command[2])
-            spell_name = command[3]
-            available_mp = heroes_dict[hero_name][1]
+    else:
+        print(f"{current_hero_name} has been killed by {attacker}!")
+        del heroes_dict[current_hero_name]
 
-            if available_mp >= mp_needed:
-                heroes_dict[hero_name][1] -= mp_needed
-                current_mp = heroes_dict[hero_name][1]
-                print(f"{hero_name} has successfully cast {spell_name} and now has {current_mp} MP!")
-
-            else:
-                print(f"{hero_name} does not have enough MP to cast {spell_name}!")
-
-        elif current_command == "TakeDamage":
-            hero_name = command[1]
-            damage = int(command[2])
-            attacker = command[3]
-            available_hp = heroes_dict[hero_name][0]
-
-            if available_hp - damage > 0:
-                heroes_dict[hero_name][0] -= damage
-                current_hp = heroes_dict[hero_name][0]
-                print(f"{hero_name} was hit for {damage} HP by {attacker} and now has {current_hp} HP left!")
-
-            else:
-                del heroes_dict[hero_name]
-                print(f"{hero_name} has been killed by {attacker}!")
-
-        elif current_command == "Recharge":
-            hero_name = command[1]
-            amount = int(command[2])
-            available_mp = heroes_dict[hero_name][1]
-
-            if available_mp + amount > 200:
-                amount = 200 - available_mp
-                heroes_dict[hero_name][1] += amount
-
-            else:
-                heroes_dict[hero_name][1] += amount
-
-            print(f"{hero_name} recharged for {amount} MP!")
-
-        elif current_command == "Heal":
-            hero_name = command[1]
-            amount = int(command[2])
-            available_hp = heroes_dict[hero_name][0]
-
-            if available_hp + amount > 100:
-                amount = 100 - available_hp
-                heroes_dict[hero_name][0] += amount
-
-            else:
-                heroes_dict[hero_name][0] += amount
-
-            print(f"{hero_name} healed for {amount} HP!")
+    return heroes_dict
 
 
-def print_function(heroes_dict):
-    print_result = ""
+def recharge(heroes_dict, split_command):
+    current_hero_name = split_command[1]
+    amount = int(split_command[2])
 
-    for hero in heroes_dict:
-        print_result += f"{hero}\n  HP: {heroes_dict[hero][0]}\n  MP: {heroes_dict[hero][1]}\n"
+    recovered_amount = amount
+    heroes_dict[current_hero_name]['MANA_POINTS'] += amount
 
-    return print_result
+    if heroes_dict[current_hero_name]['MANA_POINTS'] > 200:
+        recovered_amount = amount - (heroes_dict[current_hero_name]['MANA_POINTS'] - 200)
+        heroes_dict[current_hero_name]['MANA_POINTS'] = 200
+
+    print(f"{current_hero_name} recharged for {recovered_amount} MP!")
+
+    return heroes_dict
 
 
-def heroes_of_code(number):
-    heroes_dict = {}
-    create_heroes(heroes_dict, number_of_heroes)
-    playing_game(heroes_dict)
-    print(print_function(heroes_dict))
+def heal(heroes_dict, split_command):
+    current_hero_name = split_command[1]
+    amount = int(split_command[2])
+
+    recovered_amount = amount
+    heroes_dict[current_hero_name]['HIT_POINTS'] += amount
+
+    if heroes_dict[current_hero_name]['HIT_POINTS'] > 100:
+        recovered_amount = amount - (heroes_dict[current_hero_name]['HIT_POINTS'] - 100)
+        heroes_dict[current_hero_name]['HIT_POINTS'] = 100
+
+    print(f"{current_hero_name} healed for {recovered_amount} HP!")
+
+    return heroes_dict
 
 
+heroes = {}
 number_of_heroes = int(input())
-heroes_of_code(number_of_heroes)
+
+for hero in range(number_of_heroes):
+    hero_name, hit_points, mana_points = input().split()
+    heroes[hero_name] = {"HIT_POINTS": int(hit_points), "MANA_POINTS": int(mana_points)}
+
+command = input()
+
+while command != "End":
+    command = command.split(" - ")
+
+    if command[0] == "CastSpell":
+        heroes = cast_spell(heroes, command)
+
+    elif command[0] == "TakeDamage":
+        heroes = take_damage(heroes, command)
+
+    elif command[0] == "Recharge":
+        heroes = recharge(heroes, command)
+
+    elif command[0] == "Heal":
+        heroes = heal(heroes, command)
+
+    command = input()
+
+for hero_name, values in heroes.items():
+    print(hero_name)
+    print(f"  HP: {values['HIT_POINTS']}")
+    print(f"  MP: {values['MANA_POINTS']}")
+
+
+# def create_heroes(heroes_dict, number):
+#     for i in range(number):
+#         data = input().split(" ")
+#         hero_name = data[0]
+#         hit_points = int(data[1])
+#         mana_points = int(data[2])
+#         heroes_dict[hero_name] = [hit_points, mana_points]
+#
+#
+# def playing_game(heroes_dict):
+#     while True:
+#         command = input().split(" - ")
+#
+#         if command[0] == "End":
+#             break
+#
+#         current_command = command[0]
+#
+#         if current_command == "CastSpell":
+#             hero_name = command[1]
+#             mp_needed = int(command[2])
+#             spell_name = command[3]
+#             available_mp = heroes_dict[hero_name][1]
+#
+#             if available_mp >= mp_needed:
+#                 heroes_dict[hero_name][1] -= mp_needed
+#                 current_mp = heroes_dict[hero_name][1]
+#                 print(f"{hero_name} has successfully cast {spell_name} and now has {current_mp} MP!")
+#
+#             else:
+#                 print(f"{hero_name} does not have enough MP to cast {spell_name}!")
+#
+#         elif current_command == "TakeDamage":
+#             hero_name = command[1]
+#             damage = int(command[2])
+#             attacker = command[3]
+#             available_hp = heroes_dict[hero_name][0]
+#
+#             if available_hp - damage > 0:
+#                 heroes_dict[hero_name][0] -= damage
+#                 current_hp = heroes_dict[hero_name][0]
+#                 print(f"{hero_name} was hit for {damage} HP by {attacker} and now has {current_hp} HP left!")
+#
+#             else:
+#                 del heroes_dict[hero_name]
+#                 print(f"{hero_name} has been killed by {attacker}!")
+#
+#         elif current_command == "Recharge":
+#             hero_name = command[1]
+#             amount = int(command[2])
+#             available_mp = heroes_dict[hero_name][1]
+#
+#             if available_mp + amount > 200:
+#                 amount = 200 - available_mp
+#                 heroes_dict[hero_name][1] += amount
+#
+#             else:
+#                 heroes_dict[hero_name][1] += amount
+#
+#             print(f"{hero_name} recharged for {amount} MP!")
+#
+#         elif current_command == "Heal":
+#             hero_name = command[1]
+#             amount = int(command[2])
+#             available_hp = heroes_dict[hero_name][0]
+#
+#             if available_hp + amount > 100:
+#                 amount = 100 - available_hp
+#                 heroes_dict[hero_name][0] += amount
+#
+#             else:
+#                 heroes_dict[hero_name][0] += amount
+#
+#             print(f"{hero_name} healed for {amount} HP!")
+#
+#
+# def print_function(heroes_dict):
+#     print_result = ""
+#
+#     for hero in heroes_dict:
+#         print_result += f"{hero}\n  HP: {heroes_dict[hero][0]}\n  MP: {heroes_dict[hero][1]}\n"
+#
+#     return print_result
+#
+#
+# def heroes_of_code(number):
+#     heroes_dict = {}
+#     create_heroes(heroes_dict, number_of_heroes)
+#     playing_game(heroes_dict)
+#     print(print_function(heroes_dict))
+#
+#
+# number_of_heroes = int(input())
+# heroes_of_code(number_of_heroes)
