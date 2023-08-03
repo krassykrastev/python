@@ -59,3 +59,18 @@ while len(players) > 1:
         players.append(current_name_of_player)
 
 print(f"Last is {players[0]}")
+
+# from _collections import deque
+#
+# name_of_players = input().split()
+# step_of_hot_potato = int(input())
+#
+# players = deque(name_of_players)
+#
+# while len(players) > 1:
+#     for i in range(step_of_hot_potato - 1):
+#         players.append(players.popleft())
+#
+#     print(f"Removed {players.popleft()}")
+#
+# print(f"Last is {players.pop()}")
