@@ -31,7 +31,7 @@
 # Output2:
 # 3 people remaining.
 
-from _collections import deque
+from collections import deque
 
 clients = deque()
 
