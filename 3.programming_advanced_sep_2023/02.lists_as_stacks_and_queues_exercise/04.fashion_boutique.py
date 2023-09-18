@@ -22,7 +22,6 @@
 # 20
 #
 
-
 clothes = input().split()
 capacity_of_racks = int(input())
 clothes_on_rack = 0
