@@ -21,4 +21,5 @@ for index in range(len(expression)):
 
     elif expression[index] == ")":
         start_index = stack.pop()
-        print(expression[start_index:index + 1])
+        last_index = index + 1
+        print(expression[start_index:last_index])
