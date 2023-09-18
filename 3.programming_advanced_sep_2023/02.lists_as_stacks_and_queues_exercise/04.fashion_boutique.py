@@ -28,7 +28,7 @@ capacity_of_racks = int(input())
 clothes_on_rack = 0
 number_of_racks = 1
 
-for i in range(len(clothes)):
+while clothes:
     current_clothes = int(clothes[-1])
 
     if clothes_on_rack + current_clothes > capacity_of_racks:
