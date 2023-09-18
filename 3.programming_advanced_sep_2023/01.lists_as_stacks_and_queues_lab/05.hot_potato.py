@@ -41,36 +41,31 @@
 
 from collections import deque
 
-name_of_players = input().split()
-step_of_hot_potato = int(input())
+children = deque(input().split())
+step_of_hot_potato = int(input()) - 1
 
-players = deque(name_of_players)
-counter = 0
+while len(children) != 1:
+    children.rotate(-step_of_hot_potato)
+    print(f"Removed {children.popleft()}")
 
-while len(players) > 1:
-    counter += 1
-    current_name_of_player = players.popleft()
+print(f"Last is {children.popleft()}")
 
-    if counter == step_of_hot_potato:
-        print(f"Removed {current_name_of_player}")
-        counter = 0
-
-    else:
-        players.append(current_name_of_player)
-
-print(f"Last is {players[0]}")
-
-# from _collections import deque
+# from collections import deque
 #
-# name_of_players = input().split()
+# players = deque(input().split())
 # step_of_hot_potato = int(input())
 #
-# players = deque(name_of_players)
+# counter = 0
 #
 # while len(players) > 1:
-#     for i in range(step_of_hot_potato - 1):
-#         players.append(players.popleft())
+#     counter += 1
+#     current_name_of_player = players.popleft()
 #
-#     print(f"Removed {players.popleft()}")
+#     if counter == step_of_hot_potato:
+#         print(f"Removed {current_name_of_player}")
+#         counter = 0
 #
-# print(f"Last is {players.pop()}")
+#     else:
+#         players.append(current_name_of_player)
+#
+# print(f"Last is {players[0]}")
