@@ -39,7 +39,7 @@
 # Removed William
 # Last is Thomas
 
-from _collections import deque
+from collections import deque
 
 name_of_players = input().split()
 step_of_hot_potato = int(input())
