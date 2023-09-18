@@ -47,7 +47,7 @@
 # Alice must wait
 # 2 liters left
 
-from _collections import deque
+from collections import deque
 
 people = deque()
 water_amount = int(input())
