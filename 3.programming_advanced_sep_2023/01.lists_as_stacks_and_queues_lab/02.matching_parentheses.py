@@ -11,16 +11,14 @@
 # (2 + 3)
 # (2 + 3)
 
-algebraic_expression = input()
+expression = input()
+stack = []
 
-indexes = []
+for index in range(len(expression)):
 
-for i in range(len(algebraic_expression)):
-    current_character = algebraic_expression[i]
+    if expression[index] == "(":
+        stack.append(index)
 
-    if current_character == "(":
-        indexes.append(i)
-
-    elif current_character == ")":
-        l = indexes.pop()
-        print(algebraic_expression[l:i + 1])
+    elif expression[index] == ")":
+        start_index = stack.pop()
+        print(expression[start_index:index + 1])
