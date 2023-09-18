@@ -9,7 +9,10 @@
 # Output2: 1
 
 string = input().split()
+stack = []
 
 while string:
-    current_character = int(string.pop())
-    print(current_character, end=" ")
+    current_character = string.pop()
+    stack.append(current_character)
+
+print(' '.join(stack))
