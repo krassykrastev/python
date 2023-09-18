@@ -10,6 +10,6 @@
 
 string = input().split()
 
-while len(string) > 0:
+while string:
     current_character = int(string.pop())
     print(current_character, end=" ")
