@@ -19,7 +19,7 @@
 # Input3: {{[[(())]]}}
 # Output3: YES
 
-from _collections import deque
+from collections import deque
 
 parentheses = deque(input())
 open_parentheses = deque()
