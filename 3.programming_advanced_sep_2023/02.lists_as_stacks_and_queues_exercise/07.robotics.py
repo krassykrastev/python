@@ -85,4 +85,4 @@ while products:
     robot_name, data = free_robots[0]
     robots[robot_name][1] = data[0]
 
-    print(f"{free_robots[0][0]} - {product} {factory_time.strftime('%H:%M:%S')}")
+    print(f"{free_robots[0][0]} - {product} [{factory_time.strftime('%H:%M:%S')}]")
