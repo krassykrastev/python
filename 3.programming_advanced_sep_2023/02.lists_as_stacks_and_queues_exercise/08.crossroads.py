@@ -73,7 +73,7 @@ while info != "END":
             time = current_green + free_window
             if len(car) > time:
                 print(f"A crash happened!")
-                print(f"{car} was hit at {car[time]}")
+                print(f"{car} was hit at {car[time]}.")
                 raise SystemExit
 
             current_green -= len(car)
