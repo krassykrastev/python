@@ -34,8 +34,8 @@
 
 from collections import deque
 
-petrol_pumps = deque()
 number_of_pumps = int(input())
+petrol_pumps = deque()
 
 for i in range(number_of_pumps):
     petrol_pumps.append(input().split())
