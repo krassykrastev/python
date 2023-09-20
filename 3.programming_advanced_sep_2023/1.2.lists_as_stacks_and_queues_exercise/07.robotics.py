@@ -43,46 +43,85 @@
 # ROB - glass [08:00:16]
 # ROB - sock [08:00:24]
 
-from datetime import datetime, timedelta
 from collections import deque
 
-robots = {}
-
-for robot in input().split(";"):
-    name, time_needed = robot.split("-")
-    robots[name] = [int(time_needed), 0]
-
-factory_time = datetime.strptime(input(), "%H:%M:%S")
 products = deque()
+robots = []
+robots_data = input().split(";")
+hours, minutes, second = [int(x) for x in input().split(":")]
+start_time_seconds = hours * 3600 + minutes * 60 + second
+
+for robot in robots_data:
+    robot_name, processing_time = robot.split("-")
+    busy_until_time = 0
+    robots.append({"name": robot_name, "data": [int(processing_time), busy_until_time]})
 
 while True:
     product = input()
-
     if product == "End":
         break
-
-    else:
-        products.append(product)
+    products.append(product)
 
 while products:
-    factory_time += timedelta(0, 1)
-    product = products.popleft()
+    start_time_seconds += 1
+    current_product = products.popleft()
+    is_taken = False
 
-    free_robots = []
+    for robot in robots:
+        if robot["data"][1] <= start_time_seconds:
+            robot["data"][1] = start_time_seconds + robot["data"][0]
+            h = start_time_seconds // 3600
+            m = (start_time_seconds % 3600) // 60
+            s = (start_time_seconds % 3600) % 60
+            h = h % 24
+            print(f"{robot['name']} - {current_product} [{h:02d}:{m:02d}:{s:02d}]")
+            is_taken = True
+            break
 
-    for name, value in robots.items():
-        if value[1] != 0:
-            robots[name][1] -= 1
+    if not is_taken:
+        products.append(current_product)
 
-    for name, value in robots.items():
-        if value[1] == 0:
-            free_robots.append([name, value])
 
-    if not free_robots:
-        products.append(product)
-        continue
-
-    robot_name, data = free_robots[0]
-    robots[robot_name][1] = data[0]
-
-    print(f"{free_robots[0][0]} - {product} [{factory_time.strftime('%H:%M:%S')}]")
+# from datetime import datetime, timedelta
+# from collections import deque
+#
+# robots = {}
+# products = deque()
+#
+# for robot in input().split(";"):
+#     name, time_needed = robot.split("-")
+#     robots[name] = [int(time_needed), 0]
+#
+# factory_time = datetime.strptime(input(), "%H:%M:%S")
+#
+# while True:
+#     product = input()
+#
+#     if product == "End":
+#         break
+#
+#     else:
+#         products.append(product)
+#
+# while products:
+#     factory_time += timedelta(0, 1)
+#     product = products.popleft()
+#
+#     free_robots = []
+#
+#     for name, value in robots.items():
+#         if value[1] != 0:
+#             robots[name][1] -= 1
+#
+#     for name, value in robots.items():
+#         if value[1] == 0:
+#             free_robots.append([name, value])
+#
+#     if not free_robots:
+#         products.append(product)
+#         continue
+#
+#     robot_name, data = free_robots[0]
+#     robots[robot_name][1] = data[0]
+#
+#     print(f"{free_robots[0][0]} - {product} [{factory_time.strftime('%H:%M:%S')}]")
