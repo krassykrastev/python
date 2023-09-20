@@ -32,16 +32,14 @@
 # 1
 
 n, m = input().split()
-n = int(n)
-m = int(m)
 
 n_set = set()
 m_set = set()
 
-for _ in range(n):
+for _ in range(int(n)):
     n_set.add(input())
 
-for _ in range(m):
+for _ in range(int(m)):
     m_set.add(input())
 
 common_elements = n_set.intersection(m_set)  # n_set & m_set
