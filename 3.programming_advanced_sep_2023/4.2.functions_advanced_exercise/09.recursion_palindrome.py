@@ -15,7 +15,7 @@
 # peter is not a palindrome
 
 def palindrome(word, index):
-    if index == len(word) //2: #we check to the middle, no need to check to the end because checking to the middle is enough
+    if index == len(word) // 2:  #we check to the middle, no need to check to the end because checking to the middle is enough
         return f"{word} is a palindrome"
     if word[index] != word[-1 - index]:
         return f"{word} is not a palindrome"
