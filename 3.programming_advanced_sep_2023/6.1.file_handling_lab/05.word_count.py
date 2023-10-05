@@ -34,4 +34,3 @@ words_sorted = sorted(words.items(), key=lambda kvp: -kvp[1])
 with open("output.txt", "w") as file:
     for key, value in words_sorted:
         file.write(f"{key} - {value}\n")
-
