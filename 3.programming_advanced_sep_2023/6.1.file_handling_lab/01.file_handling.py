@@ -8,5 +8,6 @@
 try:
     file = open("text.txt", "r")
     print("Found")
+    file.close()
 except FileNotFoundError:
     print("File not found")
