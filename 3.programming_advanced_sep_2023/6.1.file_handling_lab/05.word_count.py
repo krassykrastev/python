@@ -25,7 +25,7 @@ with open("input.txt", "r") as file:
 
 words = {}
 for searched_word in searched_words:
-    pattern = re.compile(rf"\b{searched_word}\b")
+    pattern = f"\\b{searched_word}\\b"
     result = re.findall(pattern, text)
     words[searched_word] = len(result)
 
