@@ -19,3 +19,4 @@ for line in file:
     total += current_num
 
 print(total)
+file.close()
