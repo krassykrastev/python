@@ -10,3 +10,10 @@
 # fault@ his wasn't it but him@ judge to quick was @I
 # safer@ is It here@ hide @Quick@
 
+with open("text.txt", "r") as file:
+    for row, line in enumerate(file.readlines()):
+        if row % 2 == 0:
+            for char in "-,.!?":
+                line = line.replace(char, "@")
+            print(" ".join(reversed(line.split())))
+            
