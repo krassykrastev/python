@@ -16,4 +16,3 @@ with open("text.txt", "r") as file:
             for char in "-,.!?":
                 line = line.replace(char, "@")
             print(" ".join(reversed(line.split())))
-            
