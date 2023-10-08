@@ -1,3 +1,4 @@
+# create a simple two-player "Connect Four" game
 
 ROWS = 6
 COLS = 7
