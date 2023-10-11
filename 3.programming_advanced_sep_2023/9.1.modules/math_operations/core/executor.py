@@ -1,4 +1,4 @@
-from math_operations.core.operations import sum_nums, subtract, multiply, divide, power
+from core.operations import sum_nums, subtract, multiply, divide, power
 
 sign_mapper = {
     "+": sum_nums,
