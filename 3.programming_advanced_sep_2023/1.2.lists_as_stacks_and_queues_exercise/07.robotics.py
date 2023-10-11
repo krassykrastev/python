@@ -25,7 +25,7 @@
 # Output1:
 # ROB - detail [08:00:01]
 # SS2 - glass [08:00:02]
-# NX8000 - wood [08:00:03]
+# NX8000 - wood [08:00:03.core]
 # NX8000 - apple [08:00:06]
 #
 # Input2:

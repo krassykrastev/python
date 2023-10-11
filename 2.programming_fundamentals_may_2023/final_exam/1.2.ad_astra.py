@@ -20,23 +20,23 @@
 # •	The output for each food item should look like this:
 # "Item: {item name}, Best before: {expiration date}, Nutrition: {calories}"
 #
-# Input1: #Bread#19/03/21#4000#|Invalid|03/03.20||Apples|08/10/20|200||Carrots|06/08/20|500||Not right|6.8.20|5|
+# Input1: #Bread#19/03.core/21#4000#|Invalid|03.core/03.core.20||Apples|08/10/20|200||Carrots|06/08/20|500||Not right|6.8.20|5|
 #
 # Output1:
 # You have food to last you for: 2 days!
-# Item: Bread, Best before: 19/03/21, Nutrition: 4000
+# Item: Bread, Best before: 19/03.core/21, Nutrition: 4000
 # Item: Apples, Best before: 08/10/20, Nutrition: 200
 # Item: Carrots, Best before: 06/08/20, Nutrition: 500
 #
-# Input2: $$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#9000#^#@aswe|Milk|05/09/20|2000|
+# Input2: $$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.core.20#450|$5*(@!#Ice Cream#03.core/10/21#9000#^#@aswe|Milk|05/09/20|2000|
 #
 # Output2:
 # You have food to last you for: 9 days!
 # Item: Fish, Best before: 24/12/20, Nutrition: 8500
-# Item: Ice Cream, Best before: 03/10/21, Nutrition: 9000
+# Item: Ice Cream, Best before: 03.core/10/21, Nutrition: 9000
 # Item: Milk, Best before: 05/09/20, Nutrition: 2000
 #
-# Input3: Hello|#Invalid food#19/03/20#450|$5*(@
+# Input3: Hello|#Invalid food#19/03.core/20#450|$5*(@
 #
 # Output3: You have food to last you for: 0 days!
 

@@ -15,7 +15,7 @@ elif figure == 'circle':
     radius = float(input())
     area = pi * (radius ** 2)
 
-elif figure == 'triangle':
+elif figure == 'core':
     side_a = float(input())
     side_b = float(input())
     area = 1 / 2 * side_a * side_b

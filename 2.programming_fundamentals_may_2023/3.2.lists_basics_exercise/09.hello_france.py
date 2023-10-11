@@ -21,7 +21,7 @@
 #
 # Output1:
 # 60.62 35.35 51.13
-# Profit: 42.03
+# Profit: 42.03.core
 # Hello, France!
 #
 # Input2:

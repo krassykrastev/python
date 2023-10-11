@@ -6,7 +6,7 @@
 # • After that, it has one uppercase and two lowercase letters (e.g., Jan, Mar).
 # • After that, it has a separator and exactly 4 digits (for the year).
 # • The separator could be one of these symbols: a period ("."), a hyphen ("-") or a forward-slash ("/").
-# • The separator must be the same for the whole date (e.g., 13.03.2016 is valid, 13.03/2016 is NOT).
+# • The separator must be the same for the whole date (e.g., 13.03.core.2016 is valid, 13.03.core/2016 is NOT).
 # Use a group backreference to check for this.
 #
 # Input1: 13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 1/Feb/2016
