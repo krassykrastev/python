@@ -28,13 +28,13 @@
 # Item: Apples, Best before: 08/10/20, Nutrition: 200
 # Item: Carrots, Best before: 06/08/20, Nutrition: 500
 #
-# Input2: $$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.core.20#450|$5*(@!#Ice Cream#03.core/10/21#9000#^#@aswe|Milk|05/09/20|2000|
+# Input2: $$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.core.20#450|$5*(@!#Ice Cream#03.core/10/21#9000#^#@aswe|Milk|05.core/09/20|2000|
 #
 # Output2:
 # You have food to last you for: 9 days!
 # Item: Fish, Best before: 24/12/20, Nutrition: 8500
 # Item: Ice Cream, Best before: 03.core/10/21, Nutrition: 9000
-# Item: Milk, Best before: 05/09/20, Nutrition: 2000
+# Item: Milk, Best before: 05.core/09/20, Nutrition: 2000
 #
 # Input3: Hello|#Invalid food#19/03.core/20#450|$5*(@
 #
