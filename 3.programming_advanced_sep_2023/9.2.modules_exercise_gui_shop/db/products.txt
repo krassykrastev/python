@@ -1,3 +1,6 @@
-{"id": 1, "name": "some test", "img_path": "1.png", "count": 1}
-{"id": 2, "name": "asd", "img_path": "1.png", "count": 28}
-{"id": 3, "name": "3", "img_path": "1.png", "count": 30}
+{"id": 1, "name": "prod_1", "img_path": "1.png", "count": 1}
+{"id": 2, "name": "prod_2", "img_path": "1.png", "count": 26}
+{"id": 3, "name": "prod_3", "img_path": "1.png", "count": 29}
+{"id": 4, "name": "prod_4", "img_path": "1.png", "count": 1}
+{"id": 5, "name": "prod_5", "img_path": "1.png", "count": 28}
+{"id": 6, "name": "prod_6", "img_path": "1.png", "count": 30}
