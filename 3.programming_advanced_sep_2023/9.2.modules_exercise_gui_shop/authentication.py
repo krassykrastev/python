@@ -3,9 +3,36 @@ import json
 from canvas import app
 from helpers import clean_screen
 from products import render_products_screen
+from string import punctuation, ascii_uppercase, ascii_lowercase, digits
 
 
 def register(**user):
+    if user["username"] == "" or user["password"] == "" or user["first_name"] == "" or user["last_name"] == "":
+        render_register_screen(error="All fields are required!")
+        return
+
+    if len(user["username"]) < 4:
+        render_register_screen(error="Username must have at least 4 characters")
+        return
+
+    if len(user["password"]) < 4:
+        render_register_screen(error="Password must have at least 4 characters")
+        return
+
+    pass_validation_mapper = {"upper": False, "lower": False, "digit": False, "special": False}
+    for ch in user["password"]:
+        if ch in ascii_uppercase:
+            pass_validation_mapper["upper"] = True
+        elif ch in ascii_lowercase:
+            pass_validation_mapper["lower"] = True
+        elif ch in digits:
+            pass_validation_mapper["digit"] = True
+        elif ch in punctuation:
+            pass_validation_mapper["special"] = True
+    if not all(pass_validation_mapper.values()):
+        render_register_screen(error="Password must have upper, lower, number and special character")
+        return
+
     user.update({"products": []})
     with open("db/user_credentials_db.txt", "r+", newline="\n") as file:
         users = [line.strip().split(",")[0] for line in file]
