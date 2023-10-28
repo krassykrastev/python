@@ -7,7 +7,7 @@ class Trainer:
         self.pokemons = []
 
     def add_pokemon(self, pokemon: Pokemon):
-        if pokemon.name in [p.name for p in self.pokemons]:
+        if pokemon in self.pokemons:
             return f"This pokemon is already caught"
         self.pokemons.append(pokemon)
         return f"Caught {pokemon.pokemon_details()}"
@@ -24,3 +24,15 @@ class Trainer:
         for p in self.pokemons:
             info.append(f"- {p.pokemon_details()}")
         return "\n".join(info)
+
+
+pokemon = Pokemon("Pikachu", 90)
+print(pokemon.pokemon_details())
+trainer = Trainer("Ash")
+print(trainer.add_pokemon(pokemon))
+second_pokemon = Pokemon("Charizard", 110)
+print(trainer.add_pokemon(second_pokemon))
+print(trainer.add_pokemon(second_pokemon))
+print(trainer.release_pokemon("Pikachu"))
+print(trainer.release_pokemon("Pikachu"))
+print(trainer.trainer_data())
