@@ -8,7 +8,7 @@ for row in range(rows):
     if "S" in matrix[row]:
         snake_row, snake_col = row, matrix[row].index("S")
     elif "B" in matrix[row]:
-        lairs.append([row, matrix[row].index("B")])
+        lairs.append([row, matrix[row].current_index("B")])
 
 cols = len(matrix[0])
 

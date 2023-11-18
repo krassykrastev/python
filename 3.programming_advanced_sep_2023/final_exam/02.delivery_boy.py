@@ -5,7 +5,7 @@ matrix = [list(input()) for _ in range(rows)]
 def find_position(rows, matrix, symbol):
     for row in range(rows):
         if symbol in matrix[row]:
-            return [row, matrix[row].index(symbol)]
+            return [row, matrix[row].current_index(symbol)]
 
 
 def delivery(matrix, rows, cols, starting_position, steps):

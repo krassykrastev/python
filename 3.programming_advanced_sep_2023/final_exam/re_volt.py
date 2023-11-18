@@ -1,7 +1,7 @@
 def player_location(matrix):
     for r in range(len(matrix)):
         if 'f' in matrix[r]:
-            location = (r, matrix[r].index('f'))
+            location = (r, matrix[r].current_index('f'))
             return location
 
 

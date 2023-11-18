@@ -1,7 +1,7 @@
 def find_start_position(matrix):
     for row in range(len(matrix)):
         if "B" in matrix[row]:
-            return [row, matrix[row].index("B")]
+            return [row, matrix[row].current_index("B")]
 
 
 def move(the_matrix, current_directions, current_position):

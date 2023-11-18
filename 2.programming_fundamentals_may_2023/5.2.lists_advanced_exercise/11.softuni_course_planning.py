@@ -48,7 +48,7 @@ def insert_lesson(list_of_lessons, title, index):
     return list_of_lessons
 def remove_lesson(list_of_lessons, title):
     if title in list_of_lessons:
-        title_index = list_of_lessons.index(title)
+        title_index = list_of_lessons.current_index(title)
         if title_index + 1 in range(len(list_of_lessons)):
             if 'Exercise' in list_of_lessons[title_index + 1]:
                 list_of_lessons.pop(title_index + 1)
@@ -56,8 +56,8 @@ def remove_lesson(list_of_lessons, title):
     return list_of_lessons
 def swap_lesson(list_of_lessons, first_lesson, second_lesson):
     if first_lesson in list_of_lessons and second_lesson in list_of_lessons:
-        first_index = list_of_lessons.index(first_lesson)
-        second_index = list_of_lessons.index(second_lesson)
+        first_index = list_of_lessons.current_index(first_lesson)
+        second_index = list_of_lessons.current_index(second_lesson)
         first_has_exercise = False
         second_has_exercise = False
         if first_index + 1 in range(len(list_of_lessons)):
@@ -75,7 +75,7 @@ def swap_lesson(list_of_lessons, first_lesson, second_lesson):
     return list_of_lessons
 def exercise(list_of_lessons, title):
     if title in list_of_lessons and f'{title}-Exercise' not in list_of_lessons:
-        title_index = list_of_lessons.index(title)
+        title_index = list_of_lessons.current_index(title)
         list_of_lessons.insert(title_index + 1, f'{title}-Exercise')
     elif title not in list_of_lessons:
         list_of_lessons.append(title)
