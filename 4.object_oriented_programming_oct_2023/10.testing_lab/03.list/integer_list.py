@@ -18,7 +18,7 @@
 # Hint: Do not forget to test the constructor
 
 from unittest import TestCase, main
-# from extended_list import IntegerList
+from extended_list import IntegerList
 
 
 class TestIntegerList(TestCase):
