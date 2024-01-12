@@ -1,0 +1,54 @@
+body {
+    width: 800px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+  }
+  
+nav ul {
+    background-color: #444;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+ul {
+     list-style:none;  
+  }
+  
+ul li {
+     display:inline-block;  
+     font-size:24px;  
+     line-height:40px;  
+     height:40px;  
+     padding:20px;   
+  }
+  
+ul li a {   
+     text-decoration:none;   
+     color:#ffffff;    
+  }
+
+section {
+    margin-left: 20px; 
+ }
+ 
+section article header h1 {
+    font-size: 28px; 
+ }
+ 
+section article header p {
+    font-style: italic;
+    font-size: 16px; 
+ }
+ 
+section article p {
+    font-size: 24px; 
+ }
+
+footer {
+    color:#ffffff; 
+    background-color: #444;
+    text-align: center;
+    padding: 1px;
+  }
