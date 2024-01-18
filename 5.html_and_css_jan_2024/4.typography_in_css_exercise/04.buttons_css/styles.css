@@ -1,7 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 .button {
-    font-family: fontawesome;
     background-color: rgb(251,251,251);
     color: #000;
     cursor: pointer;
