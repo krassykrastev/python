@@ -1,1 +1,72 @@
-/* TODO: style the html */
+/* CSS requirements:
+•	<body>:
+o	Background color: #02475e
+•	<article> :
+o	<h2>:
+	Font size: 36px 
+	Text color: #fefecc
+	Margins: 12px
+	Align the text to the center
+o	<p>:
+	Text color: #eee
+	Font: Arial
+	Generic Font: sans-serif
+	Height of the line: 24px
+	Paddings: 10px
+	Indent text in the first line 30px
+o	<div>:
+	Bottom margin: 30px
+	Solid top border with size 2px and color #fff
+	Relative position
+	Top coordinates: 20px
+o	<span>:
+	Width: 120px
+	Font size: 14px
+	Align the text to the center
+	Top & bottom paddings 3px
+	Left & right paddings 5px
+	Top & bottom margins 0
+	Left & right margins auto
+	Background color: #fff
+	Display the span as block
+	Relative position
+	Top coordinates: -11px 
+*/
+
+body {
+    background-color: #02475e;
+}
+
+article h2 {
+    font-size: 36px;
+    color: #fefecc;
+    margin: 12px;
+    text-align: center;
+}
+
+article p {
+    color: #eee;
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    padding: 10px;
+    text-indent: 30px;
+}
+
+article div {
+    margin-bottom: 30px;
+    border-top: 2px solid #fff;
+    position: relative;
+    top: 20px;
+}
+
+article span {
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    top: -11px;
+}
