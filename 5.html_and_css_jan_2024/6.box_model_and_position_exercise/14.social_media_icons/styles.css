@@ -1,0 +1,45 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+ul.social-icons {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul.social-icons li {
+  display: inline-block;
+  
+}
+
+ul.social-icons li a {
+  background-color: #EEEEEE;
+  display: inline;
+  border-radius: 50%;
+  padding: 14px 10px;
+  margin: 5px;
+}
+
+ul.social-icons li a svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.facebook svg:hover {
+   fill: #3b5998;
+}
+
+.twitter svg:hover {
+   fill: #00acee;
+}
+
+.google svg:hover {
+    fill: #DD4B39;
+ }
+
+ .linkedin svg:hover {
+    fill: #007BB6;
+ }
+
+ .instagram svg:hover {
+    fill: #4B80A8;
+ }
