@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(238,238,238);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: rgb(255,255,255);
+    max-width: 400px;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1em 0.5em rgb(0,0,0,0.2);
+    border: 1px solid #ccc;
+}
+
+.text-container {
+    padding: 1em;
+}
+
+h3 {
+    font-family:'Georgia', serif;
+    font-size:1em;
+    line-height:1.2em;
+ }
+ 
+ .button {
+    text-decoration: none;
+    display:inline;
+    float: right;
+    padding:0.5em 1em;
+    margin: 1em;;
+    color:white; 
+    background-color :rgb(0,153,0);
+    border-radius: 0.3em;
+ }
