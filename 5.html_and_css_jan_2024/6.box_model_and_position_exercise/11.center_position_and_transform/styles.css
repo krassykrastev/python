@@ -25,9 +25,8 @@ img {
 }
 
 h3 {
-    font-family:'Georgia', serif;
-    font-size:1em;
-    line-height:1.2em;
+    font: 1em/1.2em Georgia, serif;
+    font-weight: bold;
  }
  
  .button {
