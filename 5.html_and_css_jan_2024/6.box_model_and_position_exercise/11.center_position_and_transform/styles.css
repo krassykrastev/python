@@ -39,3 +39,7 @@ h3 {
     background-color :rgb(0,153,0);
     border-radius: 0.3em;
  }
+
+ p, a {
+    font: 0.9em/1.2em Arial, Helvetica, sans-serif;
+ }
