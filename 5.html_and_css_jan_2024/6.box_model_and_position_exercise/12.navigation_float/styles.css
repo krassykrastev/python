@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 18px/1.5 Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 6em 12em;
+}
+
+article {
+    width: 60%;
+    display: inline-block;
+}
+
+aside {
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+section {
+    margin-block: 3em;
+}
+
+h1, h2, h3 {
+    font: 1em/1.2 Georgia, serif;
+    margin-block: 0.5em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.frame {
+    padding: 0.5em;
+    border: 3px solid #000;
+    background-color: #fff;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0, 0.25);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+blockquote {
+    width: 50%;
+    float: right;
+    font-family: Georgia, serif;
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
+cite {
+    display: block;
+    text-align: right;
+}
+
+article header .frame {
+    float: right;
+    margin: 0 0 2em 2em;
+}
+
+article section .frame {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+article p {
+    margin-block: 1em;
+}
+
+.site-header {
+    border-bottom: 3px solid #000;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.site-title {
+    font: 50px/1.5 Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+aside ul {
+    list-style-position: inside;
+}
+
+aside ul a{
+    text-decoration: none;
+    color: rgb(0, 158, 0);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(0, 165, 0);
+    font-weight: bold;
+    padding: 1em;
+}
+
+nav ul a:hover {
+    background-color: rgb(0, 102, 0);
+    color: #fff;
+}
