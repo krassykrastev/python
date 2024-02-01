@@ -24,3 +24,15 @@
   padding: 20px;
   font-size: 30px;
 }
+
+#box2 {
+  order: 0;
+}
+
+#box3 {
+  order: 1;
+}
+
+#box1 {
+  order: 2;
+}
