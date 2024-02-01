@@ -1,5 +1,6 @@
 .flex-container {
   display: flex;
+  gap: 70px;
   background-color: DodgerBlue;
   width: 220px;
   height: 260px;
