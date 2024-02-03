@@ -1,0 +1,21 @@
+section {
+    max-width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+    gap: 2em;
+}
+
+section article {
+    flex: 0 0 215px;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+}
