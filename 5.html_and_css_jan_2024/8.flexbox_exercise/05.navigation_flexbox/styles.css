@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+body header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em 0 1em;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
