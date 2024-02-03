@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding: 20px 20px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+main p {
+    padding: 10px 0px;
+}
+
+footer {
+    background-color: rgb(102,102,102);
+    color: rgb(255,255,255);
+    padding: 10px 20px;
+    position: sticky;
+    bottom: 0;
+}
