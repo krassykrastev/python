@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+}
+
+.container {
+    display: flex;
+    max-width: 65vw;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section span:nth-child(1),
+section span:nth-child(7) {
+    flex: 1 0 100%
+}
+
+span {
+    flex-grow: 1;
+    display: block;
+    border: 1px solid #666;
+    padding: 0.5em 0.5em 4em;
+    text-align: center;
+}
