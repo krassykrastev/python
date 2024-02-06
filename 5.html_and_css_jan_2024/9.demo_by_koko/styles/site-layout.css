@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 2em;
+}
+
+@media (min-width: 800px) {
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .site {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+}
+
+.site-header,
+.site-footer {
+    flex: 0 0 100%;
+}
+
+main {
+    flex: 1 0 calc(65% - 2em);
+}
+
+aside {
+    flex: 1 0 35%;
+}

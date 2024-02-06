@@ -1,0 +1,16 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #CCC;
+    margin-bottom: 2em;
+}
+
+.site-title {
+    font-size: 2em;
+    line-height: 1;
+}
+
+.site-title a {
+    display: block;
+    text-decoration: none;
+}

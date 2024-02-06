@@ -1,0 +1,9 @@
+.site-footer {
+    border-top: 2px solid #CCC;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.site-footer:target {
+    color: red;
+}
