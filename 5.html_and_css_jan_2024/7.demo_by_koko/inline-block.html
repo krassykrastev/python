@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 2em;
+        }
+
+        p {
+            padding-bottom: 1.5em;
+        }
+
+        .site {
+            max-width: 40em;
+            margin: 2em auto;
+            border: 2px solid black;
+            padding: 2em;
+        }
+
+        main, aside {
+            width: 50%;
+            border: 2px solid darkgreen;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 1em;
+            background: #369;
+            color: #fff;
+        }
+
+        .buttons {
+            text-align: right;
+        }
+
+        .buttons .button + .button {
+            margin-left: 1em;
+        }
+
+        /* Display inline-block */
+
+        /*
+        main, aside {
+            display: inline-block;
+            vertical-align: top;
+        }
+        */
+
+        /* Float
+            https://css-tricks.com/display-flow-root/    
+            https://rachelandrew.co.uk/archives/2017/01/24/the-end-of-the-clearfix-hack/
+        */
+        /*
+        main, aside {
+            width: 50%;
+            display: block;
+            border: 2px solid darkgreen;
+            float: left;
+            height: 100%;
+        }
+
+        .site::after {
+            display: block;
+            content: '';
+            clear: both;
+        */
+
+        /* Flexbox */
+        .site {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="site">
+
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+        </main><!--
+        --><aside>
+            <h3>Panel Header</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 1</li>
+                <li>Item 1</li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <div class="site">
+
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia libero doloribus voluptate? Ipsam, ratione animi eum id itaque, fugiat nostrum iste vel illum natus iure voluptatibus distinctio, perspiciatis ad.</p>
+        </main>
+        <aside>
+            <h3>Panel Header</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 1</li>
+                <li>Item 1</li>
+            </ul>
+        </aside>
+
+        
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eius fugiat neque dolores, culpa dicta praesentium libero quasi, facere ad laborum odio eos quis obcaecati explicabo dolorem illum temporibus officia.</p>
+    
+    <p class="buttons">
+        <a href="#" class="button">I am a button</a>
+        <a href="#" class="button">I am a button</a>
+        <a href="#" class="button">I am a button</a>
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eius fugiat neque dolores, culpa dicta praesentium libero quasi, facere ad laborum odio eos quis obcaecati explicabo dolorem illum temporibus officia.</p>
+
+</body>
+</html>

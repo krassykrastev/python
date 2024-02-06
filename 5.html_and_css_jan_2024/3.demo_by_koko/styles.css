@@ -1,0 +1,10 @@
+@import url(typography.css);
+
+.site {
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+* + p {
+    color: red;
+}

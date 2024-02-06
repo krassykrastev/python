@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+    <style>
+
+        body {
+            padding: 2em;
+        }
+
+        div {
+            padding: 2em;
+            border: 1px dashed #333;
+        }
+
+        .outside {
+            background-color: rgb(247, 180, 25);
+        }
+
+        .border {
+            background-color: antiquewhite;
+        }
+
+        .padding {
+            background-color: lightgreen;
+        }
+
+        .content {
+            background-color: lightblue;
+        }
+
+        .box {
+            border: 2px solid #000;
+            margin: 2em auto;
+            padding: 2em;
+            max-width: 50em;
+        }
+
+        .sizing-normal {
+            width: 350px;
+            height: 150px;
+            margin: 10px;
+            padding: 25px;
+            border: 5px solid black;
+        }
+
+        .sizing-fixed {
+            box-sizing: border-box;
+            width: 350px;
+            height: 150px;
+            margin: 10px;
+            padding: 25px;
+            border: 5px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="outside">
+        <div class="border">
+            <div class="padding">
+                <div class="content">
+                    Some text here
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident corporis eveniet rem beatae tempore veniam deserunt assumenda commodi minus error esse doloremque, quas maiores sequi, totam, nesciunt sit et consectetur!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident corporis eveniet rem beatae tempore veniam deserunt assumenda commodi minus error esse doloremque, quas maiores sequi, totam, nesciunt sit et consectetur!</p>
+    </div>
+
+    <div class="sizing-normal">
+
+    </div>
+
+    <div class="sizing-fixed">
+
+    </div>
+
+
+</body>
+</html>

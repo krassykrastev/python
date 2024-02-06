@@ -1,0 +1,16 @@
+body {
+    padding: 0 2em;
+    background: lightblue;
+}
+
+.site {
+    max-width: 40em;
+    margin: 0 auto;
+    background: white;
+}
+
+.site-header,
+.site-content,
+.site-footer {
+    padding: 2em;
+}
