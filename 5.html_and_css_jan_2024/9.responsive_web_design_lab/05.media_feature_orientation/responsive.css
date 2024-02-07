@@ -12,3 +12,9 @@ div {
   font-weight: bold;
   text-align: center;
 }
+
+@media (orientation: portrait) {
+  body {
+     flex-direction: column;
+  }
+}
