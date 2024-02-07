@@ -1,7 +1,18 @@
+.post {
+  container-type: inline-size;
+  container-name: post;
+}
+
 .card h2 {
   font-size: 1em;
 }
 
-.post {
-  container-type: inline-size;
+.card h2 {
+  font-size: 1em;
+}
+
+@container post (min-width: 600px) {
+  .card {
+    background: red;
+  }
 }
