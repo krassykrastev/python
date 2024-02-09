@@ -1,0 +1,37 @@
+/* 
+
+Mobile first is aditive not substractive.
+
+*/
+/* Default, No media Query - Phone and up */
+body {
+
+}
+
+/* 600px and up - Tablet */
+@media (min-width: 600px) {
+    div {
+        flex-direction: row;
+    }
+}
+
+/* 1000px and up - Desktop */
+@media (min-width: 1000px) {
+    div {
+        flex-direction: column;
+    }
+}
+
+/* 2500px and up - 1440p and up */
+@media (min-width: 2500px) {
+    div {
+        flex-direction: column;
+    }
+}
+
+/* 3500px and up - 4k and up */
+@media (min-width: 3500px) {
+    div {
+        flex-direction: column;
+    }
+}

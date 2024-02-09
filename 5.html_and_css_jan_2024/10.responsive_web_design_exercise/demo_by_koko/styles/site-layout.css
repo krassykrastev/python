@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+    }
+}
+
+@media (min-width: 920px) {
+    .site {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+}
+
+.site-header,
+.site-footer {
+    flex: 0 0 100%;
+    padding: 1em 1.5em;
+    border-radius: 0.3em;
+    background: #fff;
+    box-shadow: -0.2em 0.2em 0.5em 0 rgba(0,0,0,0.2);
+}
+
+main {
+    flex: 1 0 calc(65% - 2em);
+}
+
+aside {
+    flex: 1 0 35%;
+}

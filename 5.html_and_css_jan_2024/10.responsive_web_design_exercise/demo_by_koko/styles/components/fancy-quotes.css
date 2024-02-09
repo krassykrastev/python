@@ -1,0 +1,97 @@
+.ui-fancy-quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .ui-fancy-quotes {
+        flex-direction: row;
+    }
+}
+
+.ui-fancy-quotes .quote {
+    container: quote / inline-size;
+}
+
+.ui-fancy-quotes main,
+.ui-fancy-quotes aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-fancy-quotes main {
+    gap: 2em
+}
+
+.ui-fancy-quotes main > .quote {
+    flex: 1 0 auto;
+}
+
+.ui-fancy-quotes aside > .quote {
+    flex: 1 0 auto;
+}
+
+.ui-fancy-quotes .quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-fancy-quotes .quote .inner {
+    flex-grow: 1;
+    background: #fff;
+    padding: 0.8em 1.2em;
+    display: flex;
+    gap: 2em;
+}
+
+.ui-fancy-quotes .quote .author {
+    font-weight: bold;
+}
+
+
+.ui-fancy-quotes .quote blockquote:before {
+    display: block;
+    content: '\201C';
+    font-size: 4em;
+    line-height: 1;
+    
+}
+
+.ui-fancy-quotes .quote .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ui-fancy-quotes .quote .avatar {
+    width: 8em;
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #090;
+}
+
+.ui-fancy-quotes .quote .avatar img {
+    width: auto;
+    height: 100%;
+}
+
+@container quote (max-width: 400px) {
+    
+    .ui-fancy-quotes .quote {
+        border-top: 10px solid red;
+    }
+    
+    .ui-fancy-quotes .quote .inner {
+        position: relative;
+        flex-direction: column;
+    }
+    
+    .ui-fancy-quotes .quote .author {
+        position: absolute;
+        bottom: 0; left: 0;
+    }
+}
