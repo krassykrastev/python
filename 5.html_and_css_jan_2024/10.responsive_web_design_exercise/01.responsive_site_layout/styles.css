@@ -1,0 +1,64 @@
+body > * {   
+    margin: 0.5em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container {
+    display: flex;
+    gap: 1.5em;
+}
+
+.inner-container > main {
+    width: 100%;
+    padding: 1em;
+}
+
+.inner-container > aside > ul{
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 1em;
+    padding-top: 0.2em;
+    padding-right: 3em;
+    
+}
+
+.inner-container > aside > ul > li > a{
+    text-decoration: none;
+    color:darkslateblue;
+}
+
+
+header, aside, main, footer {
+    background-color: rgb(188, 215, 251);
+    border-radius: 10px;
+}
+
+header {
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+}
+
+footer {
+    padding-left: 0.5em;
+}
+
+@media screen and (max-width: 500px){
+    .inner-container {
+        flex-direction: column;
+    }
+
+    .inner-container > main{
+        width: auto;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+}
