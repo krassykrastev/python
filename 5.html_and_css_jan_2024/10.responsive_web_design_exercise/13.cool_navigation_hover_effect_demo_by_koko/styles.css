@@ -1,0 +1,85 @@
+:root {
+    --s-0: 1; /* === sin(90deg) */
+    --s-1: calc(sin(30deg));
+    --s-2: calc(sin(20deg));
+    --s-3: calc(sin(10deg));
+    --s-4: 0;
+    
+    --link-bgrd: #eee;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font: 14px/1.5 Lato, sans-serif;
+  }
+  
+  body {
+    font: inherit;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--link-bgrd);
+    padding-right: 2em;
+  }
+  
+  nav ul,
+  nav li {
+    border: 2px solid #fff;
+    border-width: 0 2px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    display: block;
+  }
+  
+  nav a {
+    
+    display: block;
+    padding: 2em 4em 0.9em 1.4em;
+    background: var(--link-bgrd);
+    text-decoration: none;
+    translate: 0 calc(var(--s) * 50%);
+    transition: translate 0.2s;
+    position: relative;
+    font-weight: 500;
+    color: #369;
+    border-bottom: 2px solid var(--border-color, transparent);
+    
+    &:hover {
+      --s: 1;
+      --border-color: #369;
+    }
+    
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      background: var(--link-bgrd);
+      z-index: -1;
+    }
+  }
+  
+  li:has( + li :is(a:hover, a:focus-visible)) {
+  --s: var(--s-1);
+  }
+  
+  li:has( + li :is(a:hover, a:focus-visible)),
+  li:has( :is(a:hover, a:focus-visible) ) + li {
+    --s: var(--s-2);
+  }
+  
