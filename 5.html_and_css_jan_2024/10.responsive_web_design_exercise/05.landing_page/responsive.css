@@ -1,0 +1,56 @@
+@media all and (max-width: 800px) {
+
+    body {
+        padding: 0 30px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    section.need-website article {
+        flex-basis: 50%;
+        margin-left: 0;
+    }
+
+    section.need-website img {
+        max-width: 25%;
+        margin-left: 120px;
+    }
+
+    section.our-team {
+        margin-top: 40px;
+    }
+
+    section.our-team article.card {
+        flex-basis: 40%;
+        padding: 50px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer h5 {
+        margin-bottom: 0;
+    }
+
+    footer article.about-us {
+        padding-top: 0;
+        width: 40%;
+        display: inline-block;
+    }
+
+    footer article.sitemap {
+        width: 40%;
+        display: inline-block;
+    }
+
+}
+
+@media all and (max-width: 475px) {
+
+    section.need-website img {
+        max-width: 30%;
+    }
+}

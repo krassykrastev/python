@@ -1,100 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Landing Page</title>
-    <script src="https://kit.fontawesome.com/f3dc618712.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="forms.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="title-container">
-            <p class="site-title">Purple Spider</p>
-            <p class="title-description">The last Web Agency you will ever need</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services </a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <section class="need-a-website">
-                <div>
-                    <h2>Need a website?</h2>
-                    <p class="site-description">We do amazingly futuristic stuff using the same tools everyone has. We
-                        are
-                        so
-                        unique
-                        and awesome we didn't spend money on marketing gurus or copy writers!</p>
-                    <button><a href="#">Tell us about your project</a></button>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
-                </svg>
-            </section>
-            <section class="our-team">
-                <h2>Our Team</h2>
-                <div class="person">
-                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="person-name">Genghis Khan</p>
-                    <p class="person-position">CTO</p>
-                    <p class="person-description">Smart dude, geeky, knows his stuff! Nothing else.</p>
-                </div>
-                <div class="person">
-                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="person-name">Sun Tzu</p>
-                    <p class="person-position">Sales</p>
-                    <p class="person-description">Very agressive! Results driven.</p>
-                </div>
-                <div class="person">
-                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="person-name">Genghis Khan</p>
-                    <p class="person-position">CEO</p>
-                    <p class="person-description">Drinks a lot. Loves meetings!</p>
-                </div>
-                <div class="person">
-                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="person-name">Some Guy</p>
-                    <p class="person-position">SEO Optimisation</p>
-                    <p class="person-description">Drinks. Hates computers ...</p>
-                </div>
-                <div class="person">
-                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="person-name">Generic Dude</p>
-                    <p class="person-position">Front End</p>
-                    <p class="person-description">Cares too much about useless things</p>
-                </div>
-                <div class="person">
-                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="person-name">Nice Guy</p>
-                    <p class="person-position">Lead Developer</p>
-                    <p class="person-description">We are not sure what he does!</p>
-                </div>
-            </section>
-            <section class="newsletter-section">
-                <h2 class="newsletter-title">Sign-up to our Newsletter</h2>
+<header>
+    <article>
+        <h2>Purple Spider</h2>
+        <p>the last web agency you will ever need</p>
+    </article>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="need-website">
+        <article>
+            <h2>Need a website?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae blanditiis culpa, dolor dolores
+                eum,
+                labore modi mollitia nesciunt odio omnis provident, reprehenderit rerum similique voluptates? Animi aut
+                autem minima.</p>
+            <button>Tell us about your project</button>
+        </article>
+        <img src="https://image.shutterstock.com/image-vector/planet-earth-world-globe-oceans-260nw-710617870.jpg">
+    </section>
+    <section class="our-team">
+        <header>
+            <h2>Our Team</h2>
+        </header>
+        <section class="out-team-articles">
+            <article class="card">
+                <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+                <h5>Genghis Khan</h5>
+                <p>CTO</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Nothing else</p>
+            </article>
+            <article class="card">
+                <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+                <h5>Sun Tzu</h5>
+                <p>Sales</p>
+                <p>Lorem ipsum dolor</p>
+            </article>
+            <article class="card">
+                <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+                <h5>Genghis Khan</h5>
+                <p>CEO</p>
+                <p>Lorem ipsum dolor</p>
+            </article>
+            <article class="card">
+                <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+                <h5>Some Guy</h5>
+                <p>SEO optimization</p>
+                <p>Lorem ipsum dolor</p>
+            </article>
+            <article class="card">
+                <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+                <h5>Generic Dude</h5>
+                <p>Front End</p>
+                <p>Lorem ipsum dolor</p>
+            </article>
+            <article class="card">
+                <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+                <h5>Nice Guy</h5>
+                <p>Lead Developer</p>
+                <p>Lorem ipsum dolor</p>
+            </article>
+        </section>
+    </section>
+    <section class="sign-up">
+        <h2>Sign-up to our newsletter</h2>
+        <form>
+            <label>
                 <input type="text">
-                <button class="newsletter-button"><a href="#">Абонирай се</a></button>
-            </section>
-            <section>
-                <h2>Testimonials</h2>
-            </section>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
+            </label>
+            <button>Subscribe</button>
+        </form>
+    </section>
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <article class="card-testimonials">
+            <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                laborum nihil nisi quaerat quos ratione, sit
+                unde veniam. Enim,
+                expedita, necessitatibus?</p>
+            <h5>Nice Guy</h5>
+            <p>Lead Developer</p>
+        </article>
+        <article class="card-testimonials">
+            <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                laborum nihil nisi quaerat quos ratione, sit
+                unde veniam. Enim,
+                expedita, necessitatibus?</p>
+            <h5>Nice Guy</h5>
+            <p>Lead Developer</p>
+        </article>
+        <article class="card-testimonials">
+            <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                laborum nihil nisi quaerat quos ratione, sit
+                unde veniam. Enim,
+                expedita, necessitatibus?</p>
+            <h5>Nice Guy</h5>
+            <p>Lead Developer</p>
+        </article>
+        <article class="card-testimonials">
+            <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                laborum nihil nisi quaerat quos ratione, sit
+                unde veniam. Enim,
+                expedita, necessitatibus?</p>
+            <h5>Nice Guy</h5>
+            <p>Lead Developer</p>
+        </article>
+        <article class="card-testimonials">
+            <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                laborum nihil nisi quaerat quos ratione, sit
+                unde veniam. Enim,
+                expedita, necessitatibus?</p>
+            <h5>Nice Guy</h5>
+            <p>Lead Developer</p>
+        </article>
+        <article class="card-testimonials">
+            <img src="https://www.pinclipart.com/picdir/middle/124-1240911_about-us-our-team-members-icon-or-button.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                laborum nihil nisi quaerat quos ratione, sit
+                unde veniam. Enim,
+                expedita, necessitatibus?</p>
+            <h5>Nice Guy</h5>
+            <p>Lead Developer</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <article>
+        <h2>Purple Spider</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            ratione, saepe vel!</p>
+    </article>
+    <article class="sitemap">
+        <h5>Sitemap</h5>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </article>
+    <article class="about-us">
+        <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Term and Conditions</li>
+        </ul>
+    </article>
+    <article class="contacts">
+        <h5>Contacts</h5>
+        <ul>
+            <li><i class="fas fa-phone-volume"></i><a href="#">0700 12 345</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto: office@purplespider.bg">office@purplespider.bg</a></li>
+            <li><i class="fas fa-clock"></i><a href="#">Monday-Friday: 09:00 - 18:00</a></li>
+            <li><i class="fas fa-map-marked-alt"></i><a href="#">Sofia, 28 Some Place Str. fl.1</a></li>
+        </ul>
+    </article>
+</footer>
 </body>
-
 </html>

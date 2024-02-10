@@ -1,0 +1,9 @@
+section.sign-up form {
+    padding: 50px;
+}
+
+section.sign-up form input {
+    width: 260px;
+    padding: 4px;
+    border: 1px solid black;
+}
