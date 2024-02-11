@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+.bg img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    width: 1000px;
+    height: 666px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section img {
+    border-radius: 4em;
+    box-shadow: 15px 15px 16px -10px black;}
+
+.wrap {
+    padding: 4em 29em 5em 5em;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.fn {
+    margin: 8em 5em;
+}
+
+.ln {
+    margin: 8em 21em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]  {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 5em;
+}
+
+.big-input {
+    margin: 15em 5em;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 1em 9em;
+}
+
+.big-input.password {
+    margin: 22em 5em;
+}
+
+.big-input.cpassword {
+    margin: 29em 5em;
+}
+
+.big-input.chkbox {
+    margin: 36em 5em;
+}
+
+.i {
+    margin-right: 1em;
+}
+
+span {
+    padding-left: 9px;
+}
+
+button {
+    padding: 1em 3em;
+    margin: 38em 13em;
+    background-color: #AE3C33;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5em;
+}

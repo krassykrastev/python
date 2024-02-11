@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+/*
+  COLORS
+  ------------
+*/
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    
+    --color-btn-primary: #E30071;
+}
+
+html {
+    box-sizing: border-box;
+}
+    
+html *::after,
+html *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  COMMON ELEMENTS
+  ----------------
+*/
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    width: 185px;
+    border-radius: 50px;
+    background-color: var(--color-btn-primary);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+input {
+    background-color: transparent;
+    outline-color: var(--color-black);
+    border: none;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+    padding-top: 40px;
+    padding-left: 30px;
+    border-bottom: 1px solid #ddd;
+    color: #7B8187;
+}
+
+.form__field i {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #999;
+}
+
+
+/* MAIN */
+#login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+#login .overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 450px;
+    margin: auto;
+}
+
+.login h1 {
+    font-size: 2rem;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: var(--color-white);
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}

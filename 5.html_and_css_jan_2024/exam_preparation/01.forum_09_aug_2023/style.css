@@ -1,0 +1,129 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+body {
+    background-image: url('images/background.jpg');
+    /* Replace 'your-image-url.jpg' with the actual URL of your image */
+    background-size: cover;
+    /* This will make the image cover the entire background */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-attachment: fixed;
+    /* Keep the background image fixed while scrolling */
+    font-family: 'Inter', sans-serif;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.first,
+.second,
+.third {
+    padding: 4em 3em;
+}
+
+.first,
+.second {
+    height: 410px;
+    background-color: white;
+    width: 1060px;
+}
+
+.third {
+    height: 860px;
+    background-color: white;
+    width: 530px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 8em;
+}
+
+.first {
+    margin-bottom: 40px;
+}
+
+.first i,
+.second i {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+.third i {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 1.1em;
+}
+
+.first p,
+.second p,
+.third p {
+    width: 76%;
+    font-size: 25px;
+    margin-bottom: 2em;
+}
+
+.third p{
+    width: 100%;
+}
+
+.first p,
+.second p,
+.third p {
+    color: #59595F;
+}
+
+.left footer,
+.third footer {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.first .person,
+.second .person {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    left: 45em;
+    bottom: 15em;
+}
+
+.third p {
+    margin-bottom: 7em;
+}
+
+.third .last-person {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.last-image-text {
+    display: flex;
+    align-items: center;
+}
+
+.third footer {
+    margin: 0 0 25px 25px;
+}
+
+.third span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5D595D;
+    position: relative;
+    bottom: 61px;
+    left: 167px;
+}
+
+.first img,
+.second img,
+.third img {
+    filter: grayscale(100%);
+    object-fit: cover;
+    
+}

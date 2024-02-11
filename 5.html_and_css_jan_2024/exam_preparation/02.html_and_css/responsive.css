@@ -1,0 +1,23 @@
+        @media screen and (max-width: 600px) {
+            .navigation {
+                display: block;
+                max-width: 600px;
+                margin: 20px auto;
+                width: 25%;
+            }
+            .navigation-logo-wrapper {
+                display: flex;
+            }
+            .navigation-list {
+                display: block;
+            }
+            .benefits {
+                display: block;
+            }
+            .header-img-wrapper>img:nth-child(1) {
+                display: none;
+            }
+            .info-section {
+                display: block;
+            }
+        }

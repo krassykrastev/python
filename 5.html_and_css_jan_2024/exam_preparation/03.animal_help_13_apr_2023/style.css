@@ -1,0 +1,295 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100px;
+    padding: 0 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+header ul {
+    display: flex;
+    gap: 2em;
+}
+
+.first {
+    padding: 0 8em;
+    height: 675px;
+    background-color: #85DCFF;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.first .left {
+    width: 36%;
+}
+
+.first h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+.first p {
+    margin-bottom: 3em;
+}
+
+.first button {
+    padding: 1em 4.7em;
+    font-weight: bold;
+    margin-right: 15px;
+    border: 1px solid #000;
+    border-radius: 7px;
+}
+
+.first .black-bg {
+    background-color: #000;
+    color: #fff;
+}
+
+.first img {
+    width: 675px;
+    height: auto;
+}
+
+.second {
+    height: 780px;
+    padding-top: 2em;
+}
+
+.second h2,
+.second p {
+    text-align: center;
+}
+
+.second h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.second p {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    width: 37%;
+    margin: 0 auto;
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+.second .wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second .wrap article {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    padding: 2em;
+}
+
+.second .wrap article i {
+    color: #85DCFF;
+    font-size: 7em;
+    margin-bottom: 40px;
+}
+
+.second .wrap article h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.second .wrap article h4 {
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+.third {
+    height: 865px;
+    background-color: #85DCFF;
+    padding-top: 6em;
+}
+
+.third h2 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center; 
+    margin-bottom: 2em;
+}
+
+.third .wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.third .wrap i {
+    margin-left: -23px;
+}
+
+.third .left,
+.third .right {
+    width: 540px;
+}
+
+.third .wrap p {
+    font-size: 1.3em;
+    margin-top: -4px;
+    margin-bottom: 2em;
+    width: 70%;
+}
+
+.third  button {
+    margin: 8em auto 2em auto;
+    padding: 1.3em 5em;
+    color: white;
+    background-color: #000;
+    border-radius: 7px;
+    display: flex;
+}
+
+.fourth {
+    height: 1890px;
+}
+
+.fourth h2 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.fourth h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.fourth .images {
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7em;
+}
+
+.fourth .images img {
+    height: 350px;
+    width: 375px;
+}
+
+.fourth h4 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.fourth .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.fourth .articles article {
+    height: 300px;
+    width: 1455px;
+    border: 1px solid gray;
+    margin: 1em 0;
+    border-radius: 8px;
+}
+
+.fourth .articles .top {
+    height: 100px;
+    width: 100%;
+    background-color: #85DCFF;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.fourth .articles .bot {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    height: 200px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.fifth {
+    height: 640px;
+    display: flex;
+}
+
+.fifth div {
+    width: 50%;
+}
+
+.fifth img {
+    width: 100%;
+}
+
+.fifth .right {
+    padding: 10em 4em;
+}
+
+.fifth .right h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.fifth .right p {
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+.fifth .right input {
+    width: 25em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.fifth .right button {
+    padding: 1em 7em;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    height: 125px;
+    padding: 0 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .left {
+    font-size: 2em;
+    display: flex;
+    gap: 20px;
+}
+
+footer .right {
+    font-weight: bold;
+}

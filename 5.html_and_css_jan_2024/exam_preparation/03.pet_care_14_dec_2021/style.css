@@ -1,0 +1,264 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+body {
+    font-family: Open Sans, sans-serif;
+}
+
+header {
+    height: 6em;
+    padding: 0 18em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    gap: 3em;
+}
+
+header ul li a {
+    color: #102955;
+}
+
+.first {
+    position: relative;
+}
+
+.first .bg {
+    width: 100%;
+}
+
+.first .header-dog {
+    position: absolute;
+    bottom: -10%;
+    left: 28%;
+}
+
+.first .wrapper {
+    position: absolute;
+    top: 36%;
+    left: 15%;
+    color: white;
+}
+
+.first .wrapper h1 {
+    font-weight: 300;
+    font-size: 5em;
+}
+
+.first .wrapper h2 {
+    font-size: 5em;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.first .wrapper p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.first .wrapper button {
+    margin-top: 40px;
+    color: #EA2C14;
+    background-color: white;
+    padding: 1em 4em;
+    border-radius: 25px;
+}
+
+.second {
+    height: 1920px;
+    font-family: Open Sans, sans-serif;
+}
+
+.second h1 {
+    padding-top: 5em;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.second p {
+    text-align: center;
+    font-size: 21px;
+    width: 40%;
+    font-weight: 100;
+    margin: 0 auto;
+    color: #909092;
+    margin-bottom: 5em;
+}
+
+.second .services {
+    height: 510px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 18em;
+    margin-bottom: 13em;
+}
+
+.second .services article {
+    border-radius: 1em;
+    border: 1px solid #FFC5C1;
+    text-align: center;
+    width: 385px;
+    position: relative;
+    padding: 4em 0px;
+}
+
+.second .services article p {
+    width: 83%;
+}
+
+.second .services .service-animal {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+
+.second .services .service-bg {
+    margin-bottom: 3em;
+}
+
+.second .services h2 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.pet-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pet-info .right h1,
+.pet-info .right h2,
+.pet-info .right p {
+    text-align: center;
+}
+
+.pet-info .left  {
+    width: 30%;
+}
+
+.pet-info .right {
+    width: 30%;
+}
+
+.pet-info .right h1 {
+    padding: 2em 0;
+    font-weight: normal;
+    margin-bottom: -2em;
+    text-align: left;
+}
+
+.pet-info .right h2 {
+    font-size: 4em;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.pet-info .right p {
+    font-size: 21px;
+    text-align: left;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 3em;
+}
+
+.pet-info .right button {
+    padding: 1em 5em;
+    background-color: #F04833;
+    color: white;
+    border-radius: 3em;
+}
+
+.third {
+    color: white;
+}
+
+.third img {
+    position: absolute;
+    width: 100%;
+}
+
+.third h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 4em;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 1em;
+}
+
+.third p {
+    position: relative;
+    text-align: center;
+    width: 34%;
+    font-size: 25px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+
+.third .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third h2 {
+    position: relative;
+    margin: 0 2em;
+    padding: 18px 2em;
+    background-color: white;
+    color: #EC4735;
+    border-radius: 3em;
+    font-weight: bold;
+}
+
+.third .contact-info h3 {
+    position: relative;
+    color: white;
+}
+
+.third .contact-info h3 span {
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.third .contact-info h2,
+.third .contact-info h3 {
+    font-size: 20px;
+}
+
+footer {
+    height: 19em;
+    margin: 0 20em;
+    margin-top: 18em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 20%;
+}
+
+footer div h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+footer div p {
+    margin-bottom: 1em;
+    color: #7A7A7A;
+}
+
+footer div img {
+    margin-bottom: 25px;
+}

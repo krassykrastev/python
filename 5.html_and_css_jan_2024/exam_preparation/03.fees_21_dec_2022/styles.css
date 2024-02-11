@@ -1,0 +1,238 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.inner-holder {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.main-header {
+    padding: 20px 0;
+}
+
+.main-header .inner-holder {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.main-nav-link {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #54546d;
+    transition: color .4s ease;
+}
+
+.main-nav-link:hover {
+    color: #000;
+}
+
+.logo {
+    width: 150px;
+}
+
+.section-taxes {
+    position: relative;
+    padding: 20px 0;
+}
+
+.section-taxes .inner-holder {
+    position: relative;
+    z-index: 1;
+}
+
+.section-taxes:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding: 40px 0 300px;
+    width: 100%;
+    background-color: #54546d;
+    background-image: url("./images/calculator-icon.svg");
+    background-position: -40px 70px;
+    background-repeat: no-repeat;
+}
+
+.section-heading {
+    margin: 40px 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.courses-list {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+}
+
+.courses-list-item {
+    margin: 0 10px;
+    border-radius: 10px;
+    width: 33.33%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.course-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #54546d;
+}
+
+.course-article-header .course-article-heading {
+    padding: 20px 0;
+}
+
+.course-article-heading {
+    font-size: 24px;
+    text-align: center;
+}
+
+.course-article-content {
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.price-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.price-list-item {
+    padding: 10px;
+    width: 50%;
+}
+
+.price-list-item p {
+    white-space: nowrap;
+}
+
+.price-list-item:only-child {
+    width: 100%;
+    text-align: center;
+}
+
+.price-list-item:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+.course-article-footer {
+    padding: 10px;
+    color: #fff;
+}
+
+.course-article-footer .course-article-heading {
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.basics {
+    background: rgb(0, 167, 37);
+    background: linear-gradient(90deg, rgba(0, 167, 37, 1) 10%, rgba(8, 198, 50, 1) 59%, rgba(5, 230, 54, 1) 100%);
+}
+
+.fundamentals {
+    background: rgb(93, 135, 144);
+    background: linear-gradient(90deg, rgba(93, 135, 144, 1) 10%, rgba(95, 155, 168, 1) 59%, rgba(123, 191, 207, 1) 100%);
+}
+
+.professional {
+    background: rgb(91, 76, 190);
+    background: linear-gradient(90deg, rgba(91, 76, 190, 1) 10%, rgba(120, 106, 219, 1) 59%, rgba(138, 125, 230, 1) 100%);
+}
+
+
+.section-attendance {}
+
+.table-attendance {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table-attendance tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.table-attendance td {
+    padding: 10px;
+}
+
+.table-attendance .col-2 {
+    width: 150px;
+    /* padding: 10px 30px; */
+    text-align: center;
+}
+
+.table-attendance .col-3 {
+    width: 150px;
+    /* padding: 10px 30px; */
+    text-align: center;
+}
+
+.section-financing {
+    padding: 20px 0;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo-holder {
+    padding-left: 40px;
+}
+
+.bank-logo {}
+
+.main-footer {
+    padding: 20px;
+    background-color: #54546d;
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: #C8C8C8;
+    font-family: 'Inter', sans-serif;
+}
+
+.card1 img {
+    width: 100%;
+    height: 47%;
+}
+
+.card1 {
+    width: 25%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    margin: 20px;
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.title {
+    color: #595959;
+}
+
+.after-enterprise {
+    margin-top: -13px;
+    font-size: 25px;
+}
+
+.description {
+    font-size: 13px;
+}
+
+hr {
+    width: 100%;
+    border-color: black;
+}
+
+.profile-picture img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture .time {
+    margin-left: auto;
+    color: #9FA1A1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}

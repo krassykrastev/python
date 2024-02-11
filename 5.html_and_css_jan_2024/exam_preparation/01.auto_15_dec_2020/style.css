@@ -1,0 +1,73 @@
+main {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+    margin-top: -1em;
+}
+
+article.left header p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.left,
+.right {
+    padding: 1em;
+    width: 43%;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #898989;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.bottom img {
+    width: 7%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom p:first-child {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold; 
+    font-size: 1em;   
+    margin-bottom: 6px;
+}
+
+.bottom p:last-child {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    color: #898989;
+}
+
+
+.right img {
+    height: 107%;
+}

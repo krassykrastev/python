@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+body {
+    font-family: 'Gelasio', serif;
+}
+
+header {
+    background-color: #E6E3DE;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header .mid ul {
+    font-size: 1.2em;
+    display: flex;
+    gap: 1em;
+}
+
+header .right a {
+    padding: 0.5em;
+    background-color: #554938;
+    color: white;
+}
+
+header .right i {
+    font-size: 1.3em;
+}
+
+header .right {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.first {
+    height: 615px;
+    background-image: url("Requirements-and-Resources/Media/craving.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 13em;
+}
+
+.first h2 {
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.first .search {
+    position: relative;
+    width: 32em;
+    margin: 0 auto;
+}
+
+.first .search #search {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 75%);
+    height: 2em;
+    opacity: 0.7;
+    width: 32em;
+}
+
+.first i {
+    position: absolute;
+    top: 124%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: black;
+    opacity: 0.7;
+}
+
+.second {
+    height: 1935px;
+    background-image: url("Requirements-and-Resources/Media/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 5em;
+}
+
+.second .top,
+.second .mid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.second .top .image img,
+.second .mid .image img {
+    width: 900px;
+    height: auto;
+}
+
+.second .top .text,
+.second .mid .text {
+    width: 630px;
+    background-color: #E6E3DE;
+    text-align: center;
+    padding: 0 2em;
+    padding-top: 14em;
+
+}
+
+.second .top .text h3,
+.second .mid .text h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+
+.second .top .text p,
+.second .mid .text p {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.second .top .text a {
+    padding: 0.7em 1em;
+    background-color: #554938;
+    color: white;
+    font-weight: 300;
+}
+
+.cookie-toolbox {
+    padding: 1em;
+    background-color: #DEDFDD;
+    width: 18em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.cookie-toolbox h2 {
+    font-size: 2em;
+    color: #554938;
+    font-weight: bold;
+}
+
+.second .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+}
+
+.second .wrapper article {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255,255,255,0.5);
+
+}
+
+.second .wrapper article img {
+    width: 100%;
+    height: auto;
+}
+
+.second .wrapper article .bg {
+    height: 65px;
+    width: 300px;
+}
+
+.second .wrapper article h2 {
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 16px;
+}
+
+.second button {
+    background-color: #DE5038;
+    color: white;
+    padding: 1em  2em;
+    margin: 3.5em auto;
+    display: block;
+    width: 18em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+footer {
+    height: 125px;
+    background-color: #D5D5CD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 19em;
+}
+
+footer .left nav ul ,
+footer .middle nav ul,
+footer .right {
+    display: flex;
+    gap: 1em;
+}
+
+footer .left nav ul li a,
+footer .middle nav ul li a{
+    color: black;
+}
+
+.vertical-line {
+    border-right: 1px solid #797B79;
+    height: 28px;
+    margin-top: -6px;
+}

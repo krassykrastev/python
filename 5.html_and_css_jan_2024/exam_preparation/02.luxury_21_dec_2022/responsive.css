@@ -1,0 +1,138 @@
+@media (max-width: 600px) {
+    .div-header {
+        display: none !important;
+    }
+
+    header h3 {
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    .button-header {
+        padding: 6px 7px !important;
+        margin: 36px 0 100px 0 !important;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options a {
+        display: none;
+    }
+
+    header .options article {
+        width: 100%;
+    }
+
+    header .options article h4 {
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery article a {
+        display: none;
+    }
+
+    .blog-title h4 span {
+        display: none;
+    }
+
+    .blog .blog-title h4 {
+        font-size: 39px;
+    }
+
+    .blog .blog-title a {
+        display: none;
+    }
+
+    .blog article img {
+        display: none;
+    }
+
+    #about-blog h3 {
+        font-size: 14px;
+    }
+
+    .blog #about-blog {
+        width: 90%;
+    }
+
+    .blog #about-blog p {
+        font-size: 11px;
+    }
+
+    .magazine-title {
+        display: block;
+    }
+
+    .magazine .magazine-title h4 {
+        font-size: 25px;
+        margin-left: -3em;
+    }
+
+    .magazine .magazine-title a {
+        display: none;
+    }
+
+    .magazine article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h2 {
+        font-size: 15px !important;
+        padding: 30px 0 0 0 !important;
+    }
+
+    article .magazine-info {
+        margin-left: 2em;
+    }
+
+    article .magazine-info img {
+        width: 110%;
+        height: 185px;
+    }
+
+    article .magazine-info h3 {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 2em;
+    }
+
+    article .magazine-info p {
+        width: 110%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    article .magazine-info button {
+        font-size: 13px;
+        margin: 30px 10px 30px 14em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer .icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .icons i {
+        font-size: 13px;
+    }
+}

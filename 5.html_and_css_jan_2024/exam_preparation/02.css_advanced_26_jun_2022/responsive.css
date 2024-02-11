@@ -1,0 +1,67 @@
+@media (max-width: 600px) {
+    body, textarea::placeholder {
+        margin: -15px;
+    }
+
+    .left-to-right:first-child {
+        height: 520px;
+    }
+
+    main .left-to-right article {
+        border-radius: 25%;
+        margin: 0 -2em;
+        width: 310px;
+        height: 310px;
+    }
+
+    body > main > section:nth-child(1) > article > header > h1 {
+        font-size: 2em;
+    }
+
+    body > main > section:nth-child(1) > article > button {
+        display: none;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > header > h1 {
+        font-size: 2em;
+    }
+
+    main section:nth-child(2), main section:nth-child(4) {
+        flex-direction: column;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > header > p {
+        font-size: 1.4rem;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > p {
+        line-height: 2;
+        font-size: 1.2em;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > button {
+        display: none;
+    }
+
+    body > main > section:nth-child(3) > article > header > h1 {
+        font-size: 2rem;
+    }
+
+    body > main > section:nth-child(3) > article > button {
+        display: none;
+    }
+
+    #message {
+        overflow: hidden;
+    }
+
+    form {
+        width: 33em;
+        margin-left: -7em;
+    }
+
+    section form label {
+        text-align: center;
+    }
+
+}   

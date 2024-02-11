@@ -1,0 +1,77 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFD9B0;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.wrapper .left img {
+    width: 840px;
+    height: 100%;
+    display: block;
+}
+
+.wrapper .left {
+    position: relative;
+}
+
+.wrapper .left::before {
+    content: "";
+    background-color: rgb(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.wrapper .right {
+    background-color: #111111;
+    width: 600px;
+    color: white;
+    padding: 5em;
+}
+
+.wrapper .right h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.wrapper .right .inp {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.wrapper .right .inp input {
+    background-color: transparent;
+    border-bottom: 1px solid #999999;
+    padding: 0 0 0.4em 0;
+    color: #EDB77D;
+}
+
+.wrapper .right .inp input::placeholder {
+    color: #999999;
+}
+
+button {
+    background-color: #EDB77D;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 8px;
+    width: 10.5em;
+    margin-right: auto;
+}

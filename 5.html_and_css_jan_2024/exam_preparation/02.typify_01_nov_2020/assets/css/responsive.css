@@ -1,0 +1,70 @@
+@media screen and (max-width: 600px) {
+
+    .banner h2 {
+        width: 90%;
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+    ul.actions li{
+        display: block;
+        width: 100%;
+    }
+
+    ul.actions li > a{
+        width: 90%;
+    }
+
+    header.major {
+        margin-bottom: 2em;
+    }
+
+    .wrapper > .inner{
+        width: 100%;
+    }
+
+    .wrapper {
+        padding-bottom: 1em;
+    }
+
+    body > section.wrapper.style2.special{
+        padding-top: 2em;
+    }
+
+    .grid-form .form-control.narrow{
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    body > section.wrapper.style2.special > div > form > article:nth-child(3){
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    body > section.wrapper.style2.special > div > form > ul > li > input[type=submit]{
+        width: 90%;
+    }
+
+    body > section:nth-child(2) > article > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer:before {
+        margin: 0 auto;
+        width: 80%;
+        left: 10%;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .wrapper > .inner.narrow{
+        width: 100%;
+    }
+
+    .footer {
+        padding: 2em 0 0.5em;
+    }
+}

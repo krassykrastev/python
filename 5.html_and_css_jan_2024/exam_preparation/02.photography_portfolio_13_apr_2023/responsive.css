@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px) {
+    .navigation-nav { 
+        display: none;
+    }
+
+    .home-text {
+        display: none;
+    }
+
+    .home-text-container  {
+        margin-top: -3em;
+    }
+
+    .home-tab-selector-cards-container {
+        display: block;
+    }
+
+    .portofolio-card-first-name {
+        margin-bottom: 2.5em;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .home-product-container {
+        margin-bottom: 3em;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+    }
+
+    .home-navigate-container {
+        margin-bottom: 3em;
+    }
+
+    .home-top-part {
+        flex-direction: column;
+    }
+
+    .home-contact-container {
+        margin-bottom: 3em;
+    }
+}

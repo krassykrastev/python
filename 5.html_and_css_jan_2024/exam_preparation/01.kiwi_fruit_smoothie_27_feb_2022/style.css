@@ -1,0 +1,101 @@
+@import url("https://fonts.google.com/specimen/PT+Serif");
+
+body {
+    font-family: 'PT Serif', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 53%;
+    height: 430px;
+    box-shadow: 0 0 3px;
+}
+
+.left {
+    background-image: url('image/image1.png');
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 430px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.right {
+    padding: 15px 15px;
+    margin-right: -110px;
+    width: 120%;
+}
+
+.right img {
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+hr {
+    border: 1px dashed #007f01;
+    margin-bottom: -5px;
+}
+
+.serves {
+    display: flex;
+    justify-content: space-between;
+}
+
+.serves p {
+    font-style: italic;
+}
+
+.middle {
+    font-family: 'PT Serif', sans-serif;
+
+}
+
+.middle p {
+    margin-bottom: -10px;
+}
+
+.middle span {
+    color: #007f01;
+    font-weight: bold;
+}
+
+.middle {
+    margin-bottom: 55px;
+}
+
+.last {
+    margin-bottom: 50px;
+}
+
+table {
+    border: #007f01 2px solid;
+    display: flex;
+    justify-content: center;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+td {
+    display: flex;
+}

@@ -1,0 +1,69 @@
+/* TODO: Add responsive styles here... */
+@media screen and (max-width: 600px) {
+    /* HEADER */
+    .header__sticky {
+        flex-flow: column;
+    }
+
+    .login__form {
+        align-self: flex-end;
+    }
+
+    /* HERO SECTION */
+    #hero__section {
+        height: auto;
+    }
+
+    #hero__section .hero__title {
+        font-size: 2.5rem;
+    }
+
+    #hero__section .hero__text {
+        margin-top: 90px;
+    }
+
+    #hero__section .form__search {
+        width: 250px;
+    }
+
+    #hero__section .button__search {
+        left: 10%;
+    }
+
+    /* INNER SECTION */
+    .inner__section,
+    footer {
+        padding: 20px;
+    }
+
+    /* FEATURE ITEMS */
+    .feature__item {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .feature__image,
+    .feature__content {
+        width: 100%;
+    }
+
+    /* COOKIE TOOLBOX */
+    #cookie__toolbox,
+    .cookie__toolbox__title,
+    .cookie__toolbox__image {
+        width: 100%;
+    }
+
+    .cookie__toolbox__container {
+        flex-flow: column;
+        margin-bottom: 30px;
+    }
+
+    /* FOOTER CONTENT */
+    footer .nav__container {
+        width: 100%;
+        flex-flow: column;
+        gap: 20px;
+    }
+}

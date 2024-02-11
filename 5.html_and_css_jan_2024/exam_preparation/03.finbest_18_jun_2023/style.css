@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    height: 145px;
+    background-color: white;
+    color: black;
+    padding: 0 11em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+header nav ul {
+    gap: 3em;
+    display: flex;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+header div button {
+    padding: 1em 2em;
+    border-radius: 6px;
+    background-color: #ADE2DF;
+}
+
+header div button:nth-child(1) {
+    background-color: white;
+}
+
+.first {
+    height: 535px;
+    background-color: #ADE2DF;
+    text-align: center;
+}
+
+.first h1 {
+    font-size: 5em;
+    font-weight: 500;
+    padding-top: 1.7em;
+    padding-bottom: 0.5em;
+}
+
+.first h2 {
+    font-size: 23px;
+    margin-bottom: 3em;
+}
+
+.first .btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first button,
+.fifth button {
+    padding: 1.5em 2em;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.second {
+    height: 490px;
+    padding: 0 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second div {
+    width: 490px;
+    height: 270px;
+    border-left: 1px solid #DBDBDB;
+}
+
+.second h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.second p {
+    text-align: center;
+    font-size: 21px;
+}
+
+.third {
+    height: 677px;
+    background-color: #ADE2DF;
+    display: flex;
+    justify-content: center;
+}
+
+.third .left {
+    text-align: center;
+    width: 30em;
+    border: dashed 2px #98B8B6;
+}
+
+.third .right {
+    padding: 7em;
+}
+
+.third h1 {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.third h1:nth-child(2) {
+    margin-bottom: 0.5em;
+}
+
+.third h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.third p {
+    font-size: 20px;
+    margin-bottom: 2.2em;
+    max-width: 34em;
+}
+
+.third footer h3 {
+    width: 11em;
+    padding: 7px 0;
+    border-bottom: 1px solid black;
+}
+
+.fourth {
+    height: 1045px;
+    background-color: #F3F5FA;
+}
+
+.fourth .top {
+    text-align: center;
+}
+
+
+.fourth .top button {
+    margin: 4em 0;
+    padding: 8px 14px;
+    background-color: #ADE2DF;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.fourth .top h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-top: -26px;
+}
+
+.fourth .bottom {
+    height: 665px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #DBDBDB;
+    margin-top: 5em;
+    display: flex;
+}
+
+.fourth .bottom section {
+    padding: 2.5em;
+    width: 20%;
+}
+
+.fourth .bottom section h1 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px
+}
+
+.fourth .bottom section h2 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.fourth .bottom section h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 1px solid #DBDBDB;
+    margin-bottom: 35px;
+}
+
+.fourth .bottom section p {
+    margin-bottom: 27px;
+}
+
+.fourth .bottom section button {
+    padding: 25px 6em;
+    background-color: #ADE2DF;
+    border-radius: 7px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7em;
+    font-weight: bold;
+}
+
+.vl {
+    border-left: 2px solid #DBDBDB;
+    height: 35em;
+    margin: 2em 0;
+}
+
+.fourth .bottom .last {
+    background-color: #ADE2DF;
+    width: 40%;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+.fourth .bottom .last h2 {
+    font-size: 23px;
+    width: 25em;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+.fourth .bottom .last button {
+    color: white;
+    background-color: black;
+    padding: 25px 18em;
+    margin-top: 261px;
+}
+
+.fourth .bottom span {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.fifth {
+    height: 645px;
+    background-color: #ADE2DF;
+    text-align: center;
+}
+
+.fifth h1 {
+    font-size: 6em;
+    width: 8em;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-top: 1em;
+    margin-bottom: 10px;
+}
+
+.fifth p {
+    font-size: 29px;
+    width: 30em;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+
+footer {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4em;
+}
+
+footer .right {
+    display: flex;
+    gap: 1.5em;
+}

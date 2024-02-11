@@ -1,0 +1,255 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header span {
+    color: #21A2BA;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 0 2.6em;
+    font-size: 20px;
+}
+
+header li {
+    display: flex;
+}
+
+header ul li:nth-child(1) a {
+    border-bottom: #21A2BA 5px solid;
+    margin-bottom: -15px;
+}
+
+.first img {
+    width: 100%;
+    height: 655px;
+    position: relative;
+}
+
+.first .text {
+    padding: 30px 20px;
+    color: white;
+    width: 620px;
+    height: 250px;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 16em;
+    left: 19em;
+}
+
+.first .text h1 {
+    font-size: 3.3em;
+}
+
+.first .text h1:nth-child(2) {
+    margin-top: 10px;
+}
+
+.first .text button {
+    font-size: 1.8em;
+    padding: 10px 50px;
+    margin-top: 17px;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 30px;
+}
+
+.second {
+    height: 375px;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.second h1,
+.third h1 {
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+hr {
+    height: 7px;
+    background: #34B1C4;
+    width: 11em;
+    margin-bottom: 2em;
+}
+
+.second p {
+    font-size: 20px;
+    position: absolute;
+    top: 5em;
+    left: 15%;
+    width: 69%;
+}
+
+.second button {
+    margin-top: 9em;
+    padding: 1em 4em;
+    background-color: #454545;
+    color: white;
+    border-radius: 2em;
+}
+
+.third {
+    text-align: center;
+    height: 770px;
+    background-color: #EEF0F1;
+    padding-top: 2em; ;
+}
+
+.third hr {
+    background: #454545;
+
+}
+
+.third h1 {
+    margin-top: 10px;
+}
+
+.third div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 13em;
+}
+
+.third div article {
+    width: 410px;
+    height: 565px;
+    background-color: white;
+}
+
+.third div article img {
+    width: 410px;
+    height: 275px;
+}
+
+.third div article h2 {
+    margin-top: 1em;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.third div article p {
+    font-size: 20px;
+    padding: 0 25px;
+    line-height: 1.1;
+    margin-bottom: 2em;
+}
+
+.third div article button {
+    padding: 14px 2em;
+    background-color: #454545;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.fourth {
+    height: 295px;
+    background-color: #393F43;
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.fourth h1 {
+    font-size: 3em;
+}
+
+.fourth hr {
+    background: white;
+}
+
+.fourth p {
+    font-size: 26px;
+    margin-bottom: 1.5em;
+}
+
+.fourth .email {
+    padding: 14px 1em;
+    width: 705px;
+    margin-left: -6em;
+    margin-right: 5px;
+    background-color: #545A5E;
+}
+
+.fourth .email:placeholder-shown {
+   color: #545A5E;
+   font-style: italic;
+}
+
+.fourth button{
+    padding: 14px 3em;
+}
+
+.fourth .email,
+.fourth button {
+    border-radius: 5px;
+}
+
+.fifth {
+    height: 375px;
+    background-color: #2F3539;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.fifth .contacts {
+    margin: 1.8em 9em 0 9em;
+}
+
+.fifth .contacts:nth-child(2),
+.fifth .contacts:nth-child(3) {
+    margin-left: -2em;
+}
+
+.fifth .contacts:nth-child(4) {
+    margin-right: 21em;
+}
+
+.fifth h4 {
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+.fifth p {
+    margin-top: 23px;
+}
+
+.fifth .icons i {
+    font-size: 25px;
+    margin: 0 4px;
+}
+
+footer {
+    height: 55px;
+    background-color: #262B2F;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 55px;
+}
+
+footer span {
+    color: #0F87AD;
+}

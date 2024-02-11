@@ -1,0 +1,70 @@
+.head {
+    margin-left: 18em;
+}
+
+header h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+header h2 {
+    font-family: "Helvetica", sans-serif;
+    color: #7A7576;
+    font-size: 1.45em;
+    margin-bottom: 49px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.left,
+.right {
+    width: 35%;
+    height: 23em;
+}
+
+.left {
+    position: relative;
+}
+
+.left button {
+    background-color: #03A87C;
+    color: white;
+    padding: 20px 95px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.right {
+    font-family: "Helvetica", sans-serif;
+}
+
+.right h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.right p {
+    font-size: 27px;
+    line-height: 39px;
+    color: #7A7576;
+}
+
+span {
+    background-color: #CEFDE9;
+}
+
+hr {
+    width: 24%;
+    margin-top: 6em;
+}

@@ -1,0 +1,63 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #fdfdfd;
+}
+
+header {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+header p:first-child {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em
+}
+
+header span {
+    color: #a1b74d
+}
+
+main {
+    display: flex;
+        align-items: baseline;
+        justify-content: center;
+}
+
+article {
+    width: 21%;
+    height: 33em;
+}
+
+.info {
+    width: 92%;
+    padding: 2em 2em;
+    background-color: #f6f6f6;
+    margin-top: -3px;
+}
+
+article .head {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    letter-spacing: -0.02em;
+}
+
+article .text {
+    font-size: 17px;
+    line-height: 1.9em;
+    color: #6e6e6e;
+    margin-bottom: 18px;
+}
+
+article button {
+    color: white;
+    padding: 15px 35px;
+    background-color: #aac252;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 900;
+}

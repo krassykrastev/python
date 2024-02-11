@@ -1,0 +1,267 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url("https://fonts.google.com/specimen/Raleway");
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 2em;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+    max-width: 1900px;
+    height: 815px;
+    background-color: #EFEFEF;
+    margin-bottom: 2em;
+}
+
+.first h1 {
+    text-align: right;
+    padding-right: 2em;
+    padding-top: 2em;
+    font-size: 1.3em;
+}
+
+.first .wrapper {
+    display: flex;
+}
+
+.first .left,
+.fourth .left {
+    width: 920px;
+    padding: 9em 8em 0 10em
+}
+
+.first .left h2 span,
+.fourth .left h2 span,
+.sixth h2 span {
+    font-weight: bold;
+}
+
+.first .left h2,
+.fourth .left h2,
+.sixth h2 {
+    color: #222222;
+    font-weight: 100;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.first .left p,
+.fourth .left p,
+.sixth p {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 100;
+    width: 98%;
+    margin-bottom: 2em;
+    line-height: 1.4;
+}
+
+.first .hline {
+    height: 4em;
+    border-left: 2px solid black;
+}
+
+.first .wrapper img {
+    padding-top: 7%;
+}
+
+.second .left {
+    width: 30%;
+}
+
+.second .right {
+    width: 60%;
+    height: 50%;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.second .right .wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.second .right .wrap h2 {
+    margin-right: 12em;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.second .right .wrap h2 span {
+    font-weight: bold;
+}
+
+.second .right hr {
+    width: 6%;
+    margin-left: 0;
+    height: 3px;
+    background-color: black;
+}
+
+.second .right p {
+    font-size: 22px;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 2em;
+    width: 74%;
+    line-height: 1.5;
+}
+
+.second .right .logos i {
+    background-color: #909090;
+    color: white;
+    padding: 1em;
+}
+
+.second .right .logos {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    gap: 1em;
+}
+
+.third {
+    width: 100%;
+    height: auto;
+}
+
+.third img {
+    width: 100%;
+    height: auto;
+}
+
+.fourth {
+    display: flex;
+    align-items: center;
+}
+
+.fourth .right {
+    width: 30%;
+    height: auto;
+}
+
+.fourth .right img {
+    width: 140%;
+    height: auto;
+}
+
+.fourth .left {
+    height: 440px;
+    padding: 4em 8em 0 10em;
+}
+
+.fourth .left p {
+    font-size: 25px;
+}
+
+.fifth {
+    position: relative;
+}
+
+.fifth .images {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.fifth img {
+    width: 33%;
+    height: auto;
+    position: absolute;
+}
+
+body>section.fifth>div>img:nth-child(1) {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+body>section.fifth>div>img:nth-child(3) {
+    top: 50%;
+    left: 42%;
+    transform: translate(50%, -50%);
+}
+
+body>section.fifth>div>img:nth-child(2) {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.sixth {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.sixth p {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.sixth .wrapper {
+    width: 42em;
+    height: 420px;
+    margin: 0 auto;
+}
+
+.sixth .wrapper .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+input[type="email"],
+#subject {
+    padding: 1em;
+    width: 45%;
+    border: 1px solid black;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+    color: black;
+}
+
+.sixth .wrapper .message {
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.sixth .wrapper .message h3 {
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    font-size: 20px;
+}
+
+.sixth .wrapper button {
+    padding: 1em 270px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 3em;
+}

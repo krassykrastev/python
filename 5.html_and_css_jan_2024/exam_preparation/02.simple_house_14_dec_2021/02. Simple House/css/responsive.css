@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        margin-left: -50px;
+        margin-right: -65px;
+    }
+
+    .tm-section-title {
+        margin-left: inherit;
+        width: 50%;
+        margin: 0 auto 1em auto;
+        font-weight: bold;
+    }
+
+    body > main > header > p {
+        width: 68%;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+
+    .tm-gallery-item {
+        max-width: 100%;
+        width: 280px;
+    }
+
+    .tm-gallery-page {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    body > main > section.tm-cta-section.tm-section.tm-container-inner > article {
+        margin: 0 -15px 0 -15px;
+    }
+
+    body > main > section.tm-cta-section.tm-section.tm-container-inner > article > article:nth-child(2) > article > p {
+        width: 92%;
+    }
+}

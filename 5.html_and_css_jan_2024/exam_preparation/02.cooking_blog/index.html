@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02. Cooking Blog</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header__sticky">
+        <h2 class="logo">Food</h2>
+        <nav class="navigation">
+            <ul class="nav__list" role="list">
+                <li class="nav__item">
+                    <a href="#" class="nav__item__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item__link">Recipes</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item__link">Cuisines</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item__link">Tips</a>
+                </li>
+            </ul>
+        </nav>
+       <form action="" class="login__form">
+            <button class="btn btn-primary btn-login">
+                Log In
+            </button>
+            <button class="button__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+       </form>
+    </header>
+    <main>
+        <section id="hero__section">
+            <img src="images/craving.jpg" alt="hero image" class="hero__image">
+            <div class="hero__text">
+                <h1 class="hero__title">What are you craving?</h1>
+                <form action="" method="get" class="form__search">
+                    <button class="button__search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" name="search" id="search" class="form__field search__field">
+                </form>
+            </div>
+        </section>
+        
+        <!-- Article with bg image and footer -->
+        <article id="bg_section">
+            <section class="inner__section">
+                <article class="feature__item">
+                    <img src="images/cocktails.jpg" alt="cocktails" class="feature__image">
+                    <div class="feature__content">
+                        <h2 class="feature__title">Party favorites</h2>
+                        <h3 class="feature__subtitle">The best cocktails and how to make them</h3>
+                        <button class="btn btn-primary">View recipes</button>
+                    </div>
+                </article>
+                <article class="feature__item">
+                    <div class="feature__content">
+                        <h2 class="feature__title">A Royal-Icing Tutorial:</h2>
+                        <h3 class="feature__subtitle">Decorate Christmas Cookies Like a Boss</h3>
+                    </div>
+                    <img src="images/cookies.jpg" alt="cocktails" class="feature__image">
+                </article>
+    
+                <section id="cookie__toolbox">
+                    <h2 class="cookie__toolbox__title">Cookie Toolbox</h2>
+                    <div class="cookie__toolbox__container">
+                        <div class="cookie__toolbox__item">
+                            <img src="images/cutters.jpg" alt="cutters" class="cookie__toolbox__image">
+                            <p class="cookie__toolbox__description">Cookie cutters</p>
+                        </div>
+                        <div class="cookie__toolbox__item">
+                            <img src="images/sheets.jpg" alt="cutters" class="cookie__toolbox__image">
+                            <p class="cookie__toolbox__description">Baking sheets</p>
+                        </div>
+                        <div class="cookie__toolbox__item">
+                            <img src="images/bowls.jpg" alt="cutters" class="cookie__toolbox__image">
+                            <p class="cookie__toolbox__description">Batter bowls</p>
+                        </div>
+                        <div class="cookie__toolbox__item">
+                            <img src="images/rolling_pin.jpg" alt="cutters" class="cookie__toolbox__image">
+                            <p class="cookie__toolbox__description">Rolling pin</p>
+                        </div>
+                    </div>
+                    <div class="cookie__toolbox__shop__now__container">
+                        <button class="cookie__toolbox__shop__now ">Shop Now!</button>
+                    </div>
+                </section>
+            </section>
+
+            <footer>
+                <div class="nav__container">
+                     <ul class="nav__list" role="list">
+                         <li class="nav__item"><a href="" class="nav__item__link">About</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Team</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Events</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Jobs</a></li>
+                     </ul>
+         
+                     <ul class="nav__list" role="list">
+                         <li class="nav__item"><a href="" class="nav__item__link">FAQ</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">My Orders</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Favorites</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Contacts</a></li>
+                     </ul>
+         
+                     <ul class="nav__list" role="list">
+                         <li class="nav__item"><a href="" class="nav__item__link">2019</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Terms</a></li>
+                         <li class="nav__item"><a href="" class="nav__item__link">Privacy</a></li>
+                     </ul>
+                </div>
+             </footer>
+        </article>
+
+
+
+    </main>
+    
+</body>
+</html>
