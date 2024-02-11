@@ -8,46 +8,52 @@
   padding: 20px;
 }
 
-body {
-/* TODO
-CSS Grid. Display grid. 
-Define the grid areas. 
-Create two unequal columns that sits next to each other 
-*/
+body {  
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-
-body {
-/* TODO style the body*/
+section {
+  display: flex;
 }
 
 header { 
-/* TODO style the header */
+  background:#1ABC9C;
+  color:#fff;
+  padding: 60px;
+  text-align: center;
+  margin: 0;
 }
 
 nav {
-/* TODO style the navigation bar*/
+  background-color:#333; 
+  padding:14px 26px 14px 26px;
 }
 
 nav a {
-/* TODO style the navigation bar links*/
+  text-decoration: none;
+  color:white;
+  padding: 14px 20px 14px 20px;
+  text-align: left;
 }
 
 aside {
-/* TODO style the sidebar*/
+
+  width: 35%;
+  background:#f1f1f1; 
+  padding: 20px;
 }
 
 main {
-/* TODO style the main*/
+  background: #fff;
+  padding: 20px;
 }
 
-footer{
-/* TODO style the footer*/
+footer {
+  background:#ddd; 
+  color:#000;  
+  text-align:center;  
+  padding:20px;
 }
 
 /* TODO Responsive layout - when the screen is less than 700px wide, 
