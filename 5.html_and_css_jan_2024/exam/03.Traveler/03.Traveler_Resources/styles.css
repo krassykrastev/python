@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 18px/1.5 "Karla", sans-serif;
+}
+
+body {
+    border: 4px solid #000;
+    background-image: url('images/poster.jpg');
+    backdrop-filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: 1920px 600px;
+    background-position: top center;
+}
+
+.site-section.banner {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 6em;
+    color: #FFF;
+
+    h1 {
+        padding-top: 0.4em;
+        font-family: "Cormorant Infant";
+        font-size: 90px;
+        line-height: 1.26;
+        margin-bottom: 3.5rem;
+    }
+
+    p {
+        padding-top: 2em;
+        text-align: center;
+        font-size: 0.8em;
+        padding-bottom: 2em;
+    }
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+
+    nav ul {
+        display: flex;
+        font-size: 16px;
+    }
+
+    nav li {
+        list-style: none outside;
+        padding: 0 0.7em;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+}
+
+.site-title a {
+    display: block;
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url('images/logo.webp');
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.customer-testimonial {
+    padding-top: 2em;
+    background-color: #F8F0E9;
+
+    h2 {
+        padding-top: 1em;
+        padding-left: 28em;
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    
+    p {
+        padding-top: 1em;
+        padding-left: 6.5em;
+        padding-right: 6.5em;
+        padding-bottom: 1em;
+        font-family: "Cormorant Infant";
+        font-style: italic;
+        font-weight: bold;
+        font-size: 3em;
+        line-height: 1
+    }
+    
+}
+
+
+.site-section.support {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #E14747;
+    text-align: center;
+    color: #fff;
+
+    h2 {
+        font-size: 1em;
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+    
+    }
+
+    p {
+        font-size: 0.8em;
+        padding-bottom: 1em;
+    }
+}
+
+.site-section.understand-your-mind {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #F8F0E9;
+    padding-left: 30em;
+    padding-right: 30em;
+    text-align: center;
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    h2 {
+        font-family: "Cormorant Infant";
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 2.5em;
+        line-height: 1;
+    }
+
+    p {
+        padding-top: 3.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 3.5em;
+        font-size: 0.77em;
+        text-align: left;
+    }
+
+    .read-more {
+        display: flex;
+        margin-left: 25px;
+        width: 100px;
+        border: 1px solid #000;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        border-radius: 5px;
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+            }
+    }
+
+    .read-all {
+        display: inline-block;
+        border: 1px solid #000;
+        padding-top: 0;
+        padding-bottom: 0.2em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        margin-top: 3.5em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+            }
+    }
+
+}
+
+.site-section.find-local-guide {
+    background-color: #E14747;
+    text-align: center;
+    color: #fff;
+
+    h2 {
+        font-family: "Cormorant Infant";
+        font-size: 2.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    
+    }
+
+    p {
+        font-size: 0.7em;
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+
+    .local-guide {
+        display: inline-block;
+        background-color: #FAD87A;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 3.5em;
+        margin-bottom: 3.5em;
+        border-radius: 20px;
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+            }
+    }
+    
+}
+
+.site-footer {
+    background: #352B2A;
+    color: #fff;
+    padding-top: 4em;
+    padding-left: 8em;
+    font-size: 12px;
+    
+    img {
+        width: 60px;
+        height: auto;
+        padding-bottom: 2em;
+    }
+
+    .copyright {
+        padding-top: 1em;
+        padding-bottom: 5em;
+        color: #766968;
+    }
+}
