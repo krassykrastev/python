@@ -1,8 +1,7 @@
 function printMonth(monthNumber) {
   if (monthNumber < 1 || monthNumber > 12) {
     console.log("Error!");
-  } 
-  else {
+  } else {
     let months = [
       "January",
       "February",
