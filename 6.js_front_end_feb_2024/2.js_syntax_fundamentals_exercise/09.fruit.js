@@ -6,7 +6,8 @@
 // The output should be printed on the console.
 
 function solve(fruit, weight, pricePerKg) {
-    let money = (weight / 1000 * pricePerKg).toFixed(2);
+    let weightInKg = weight / 1000;
+    let money = (weightInKg * pricePerKg).toFixed(2);
     console.log(`I need $${money} to buy ${weightInKg.toFixed(2)} kilograms ${fruit}.`);
 }
 
