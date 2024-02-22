@@ -1,0 +1,35 @@
+/*
+ * Remove all whitespace from all elements
+ * - - - - - - - - - - - */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * Reset box-sizing
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ * - - - - - - - - - - - */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/*
+ * Animate scroll movement
+ * - - - - - - - - - - - */
+html {
+    scroll-behavior: smooth;
+}
+
+/*
+ * Fix images behaviour - block elements
+ * - - - - - - - - - - - */
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

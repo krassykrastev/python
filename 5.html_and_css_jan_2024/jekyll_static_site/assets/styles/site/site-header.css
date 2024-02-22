@@ -1,0 +1,28 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--clr-border-layout);
+    position: relative;
+    z-index: 10;
+}
+
+.site-header .site-title {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+}
+
+.site-header .site-title p {
+    padding: 0;
+}
+
+.site-header .site-title a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8em 1em;
+    padding-right: 5em;
+}
+
+.site-header .main-nav {
+    flex-grow: 1;
+}
