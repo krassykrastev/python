@@ -1,6 +1,6 @@
 function solve(numbers, rotations) {
     for (let i = 0; i < rotations; i++) {
-        firstElement = numbers.shift()
+        let firstElement = numbers.shift()
         numbers.push(firstElement);
     }
     console.log(numbers.join(' '));
