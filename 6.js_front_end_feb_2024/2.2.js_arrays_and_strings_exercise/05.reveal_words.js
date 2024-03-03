@@ -1,11 +1,9 @@
-function solve(wordwordsInput, template) {
-    let words = wordwordsInput.split(', ');
-    let matches = template.matchAll(/\*+/g);
-    for (let match of matches) {
-        let word = words.find(w => w.length === match[0].length);
-        template = template.replace(match[0], word);
+function solve(words, text) {
+    words = words.split(", ");
+    for (let word of words) {
+        text = text.replace("*".repeat(word.length), word);
     }
-    console.log(template);
+    console.log(text);
 }
 
 solve('great','softuni is ***** place for learning new programming languages')
