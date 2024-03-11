@@ -1,5 +1,5 @@
-const solve = (a, b, operator) => {
-    const operations = {
+function solve(a, b, operator) {
+    let operations = {
         multiply: (a, b) => a * b,
         divide: (a, b) => a / b,
         add: (a, b) => a + b,
