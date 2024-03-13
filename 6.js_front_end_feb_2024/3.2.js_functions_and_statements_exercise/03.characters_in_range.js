@@ -3,9 +3,9 @@ function solve(firstCharacter, secondCharacter) {
     let end = secondCharacter.charCodeAt(0);
 
     if (start > end) {
-        let temp = start;
-        start = end;
-        end = temp;
+
+        start = secondCharacter.charCodeAt(0);
+        end = firstCharacter.charCodeAt(0);
     }
 
     let charactersInRange = '';
