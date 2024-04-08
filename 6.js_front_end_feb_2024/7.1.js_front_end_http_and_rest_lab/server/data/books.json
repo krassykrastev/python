@@ -1,0 +1,14 @@
+{
+    "books": {
+        "-MSbypx-13fHPDyzNRtf": {
+            "id": "-MSbypx-13fHPDyzNRtf",
+            "title": "Harry Potter",
+            "author": "J.K.Rowling"
+        },
+        "-MSbz99qxklK-5rZWGmt": {
+            "id": "-MSbz99qxklK-5rZWGmt",
+            "title": "Chrinicles of Narnia",
+            "author": "C.S.Lewis"
+        }
+    }
+}
