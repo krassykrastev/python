@@ -8,6 +8,7 @@ function attachEvents() {
     const phoneElement = document.getElementById('phone');
 
     loadButtonElement.addEventListener('click', () => {
+        phonebookElement.innerHTML = '';
         fetch(baseUrl)
             .then(response => response.json())
             .then(data => {
